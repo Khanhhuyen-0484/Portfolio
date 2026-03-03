@@ -23,34 +23,52 @@
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <span class="logo-text">KH.</span>
+      <a href="index.html"><span class="logo-text">KH.</span></a>
     </div>
 
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Projects</a>
-      <a href="#" class="nav-link">Services</a>
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#work" class="nav-link">Projects</a>
       <a href="About.html" class="nav-link active">About</a>
+      <a href="contact.html" class="nav-link mobile-only">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn-contact">Contact</a>
+    <a href="contact.html" class="btn-contact desktop-only">Contact</a>
+    
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
   </header>
+  
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="index.html#work" class="mobile-nav-link">Projects</a>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
 
   <!-- Hero Section -->
   <section class="about-hero">
     <div class="about-hero-content">
       
       <div class="about-hero-text">
-        <div class="availability-badge">
+        <div class="availability-badge fade-in-slow">
           <span class="availability-dot"></span>
           <span class="availability-text">Available for Q4 2026</span>
         </div>
 
-        <h1 class="about-title">
+        <h1 class="about-title fade-in-slow">
           Designing for the<br>
           <span class="highlight">Human Experience</span>
         </h1>
 
-        <p class="about-description">
+        <p class="about-description reveal">
           I'm a 4th-year IT student and UI/UX Design Intern specializing in
 bridging the gap between technical infrastructure and intuitive
 digital experiences. Based in TPHCM, I focus on creating
@@ -78,9 +96,9 @@ should be accessible, beautiful, and most importantly, invisible.
           </div>
         </div>
 
-        <div class="about-cta">
-          <a href="#contact" class="btn-primary">
-            Let's talk
+        <div class="about-cta reveal">
+          <a href="contact.html" class="btn-primary">
+            Contact
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -96,7 +114,7 @@ should be accessible, beautiful, and most importantly, invisible.
         </div>
       </div>
 
-      <div class="about-hero-image">
+      <div class="about-hero-image reveal">
         <div class="image-frame">
           <!-- hero CV image added below -->
           <img class="hero-cv" src="img/cv.jpg" alt="CV" />
@@ -111,7 +129,7 @@ should be accessible, beautiful, and most importantly, invisible.
 
 
 <!-- Design Process -->
-<section class="process-section">
+<section class="process-section reveal">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">My Design Process</h2>
@@ -178,7 +196,7 @@ should be accessible, beautiful, and most importantly, invisible.
 
 
 <!-- Skills Section -->
-<section class="skills-section">
+<section class="skills-section reveal">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">Skills & Tools</h2>
@@ -227,7 +245,7 @@ should be accessible, beautiful, and most importantly, invisible.
 
 
 <!-- Ready Section -->
-<section class="ready-section">
+<section class="ready-section reveal">
   <div class="ready-box">
     <h2>Ready to build something amazing?</h2>
     <p>
@@ -236,14 +254,14 @@ should be accessible, beautiful, and most importantly, invisible.
     </p>
 
     <div class="ready-buttons">
-      <a href="#contact" class="primary-btn">Get in Touch</a>
+      <a href="contact.html" class="primary-btn">Get in touch</a>
     </div>
   </div>
 </section>
 
 
 <!-- Footer -->
-<footer class="footer" id="contact">
+<footer class="footer reveal" id="contact">
   <div class="container">
 
     <div class="footer-content">
@@ -255,24 +273,15 @@ should be accessible, beautiful, and most importantly, invisible.
       </div>
 
       <div class="footer-links">
-
         <div class="footer-column">
-          <h4>Social</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#work">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
-        <div class="footer-column">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:youremail@gmail.com">Email</a></li>
-            <li><a href="#">Book a Call</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
 
@@ -285,5 +294,6 @@ should be accessible, beautiful, and most importantly, invisible.
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
