@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Khánh Huyền</title>
+  <meta name="description" content="Browse Khánh Huyền's selected UI/UX projects across mobile apps, websites and design systems.">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="gradient"></div>
+
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><span class="logo-text">KH.</span></a>
+    </div>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="About.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link mobile-only">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn-contact desktop-only">Contact</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="projects-hero">
+    <div class="container">
+      <div class="projects-hero-copy reveal">
+        <div class="availability-badge fade-in-slow">
+          <span class="availability-dot"></span>
+          <span class="availability-text">Selected work</span>
+        </div>
+
+        <h1 class="hero-title fade-in-slow">
+          <span>Projects</span>
+          <span class="subtitle">Mobile, website and system design</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          A curated collection of product design work focused on clarity, elegant visuals and user-centered flows.
+        </p>
+
+        <div class="project-scope reveal">
+          <div class="project-scope-item">
+            <strong>07</strong>
+            <span>Selected projects</span>
+          </div>
+          <div class="project-scope-item">
+            <strong>03</strong>
+            <span>Core categories</span>
+          </div>
+          <div class="project-scope-item">
+            <strong>UI/UX</strong>
+            <span>Design-first approach</span>
+          </div>
+        </div>
+
+        <div class="hero-cta reveal">
+          <a href="contact.html" class="btn-primary">Let’s talk</a>
+          <a href="#all-projects" class="btn-secondary">Explore projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="all-projects">
+    <div class="container">
+      <div class="projects-heading reveal">
+        <div>
+          <h2 class="section-title">Browse by category</h2>
+          <p>Filter the collection to explore mobile apps, websites and systems more quickly.</p>
+        </div>
+      </div>
+
+      <div class="project-filters reveal" role="tablist" aria-label="Project categories">
+        <button class="filter-chip is-active" type="button" data-filter="all">All projects</button>
+        <button class="filter-chip" type="button" data-filter="mobile">Mobile</button>
+        <button class="filter-chip" type="button" data-filter="website">Website</button>
+        <button class="filter-chip" type="button" data-filter="system">System</button>
+      </div>
+
+      <div class="projects-grid projects-grid-compact projects-grid-minimal" id="projects-grid">
+        <article class="project-card" data-category="system">
+          <a href="projects/lumina.html">
+            <div class="project-overlay">
+              <img src="project1.jpg" alt="Lumina Analytics Dashboard UI Design" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category saas">System</span>
+              <h3 class="project-title">Lumina Analytics</h3>
+              <p class="project-description">Enterprise dashboard for faster decision-making.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <a href="projects/caretrees.html">
+            <div class="project-overlay">
+              <img src="img/care app.png" alt="Care Trees Mobile App UI Design" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category mobile">Mobile</span>
+              <h3 class="project-title">Care Trees App</h3>
+              <p class="project-description">A calm plant-care experience with reminders.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="website">
+          <a href="projects/elogi.html">
+            <div class="project-overlay">
+              <img src="img/M3.png" alt="ELOGI E-commerce UX Case Study" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category ecommerce">Website</span>
+              <h3 class="project-title">ELOGI</h3>
+              <p class="project-description">Editorial fashion site with a refined shopping flow.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <a href="projects/pulsefit.html">
+            <div class="project-overlay">
+              <img src="project1.jpg" alt="PulseFit mobile wellness app concept" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category mobile">Mobile</span>
+              <h3 class="project-title">PulseFit</h3>
+              <p class="project-description">Workout tracking with a lightweight daily flow.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="website">
+          <a href="projects/nexa-studio.html">
+            <div class="project-overlay">
+              <img src="img/M3.png" alt="Nexa Studio website concept" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category ecommerce">Website</span>
+              <h3 class="project-title">Nexa Studio</h3>
+              <p class="project-description">Agency website with bold positioning and clear CTA flow.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="system">
+          <a href="projects/atlas-design-system.html">
+            <div class="project-overlay">
+              <img src="project1.jpg" alt="Atlas Design System concept" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category saas">System</span>
+              <h3 class="project-title">Atlas Design System</h3>
+              <p class="project-description">A reusable UI foundation for product teams.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <a href="projects/wander-journal.html">
+            <div class="project-overlay">
+              <img src="img/care app.png" alt="Travel journal mobile app concept" class="project-image">
+            </div>
+            <div class="project-content">
+              <span class="project-category mobile">Mobile</span>
+              <h3 class="project-title">Wander Journal</h3>
+              <p class="project-description">Trip journaling with memories and notes.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer reveal">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">Crafting digital experiences for next-generation SaaS brands and creative startups.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 Khánh Huyền. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
