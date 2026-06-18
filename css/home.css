@@ -1326,6 +1326,554 @@ body {
 }
 
 /* ============================================
+   ELOGI Case Study
+   ============================================ */
+
+.elogi-hero {
+  padding: 96px 0 56px;
+}
+
+.elogi-hero-copy {
+  max-width: 980px;
+}
+
+.elogi-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.elogi-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.elogi-hero .case-stat,
+.elogi-highlight-card,
+.elogi-step,
+.elogi-feature-card,
+.elogi-ui-card {
+  background: linear-gradient(145deg, rgba(12, 38, 32, 0.92), rgba(15, 23, 42, 0.92));
+  border-color: rgba(95, 219, 183, 0.28);
+}
+
+.elogi-hero .case-stat-value {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.elogi-hero-media {
+  margin-top: 40px;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid rgba(95, 219, 183, 0.35);
+  background: radial-gradient(circle at top, rgba(95, 219, 183, 0.18), rgba(255,255,255,0.03));
+  box-shadow: 0 40px 120px rgba(0,0,0,0.72);
+}
+
+.elogi-hero-media img,
+.elogi-showcase img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elogi-hero-media img {
+  aspect-ratio: 16 / 9;
+}
+
+.elogi-lead {
+  color: rgba(255,255,255,0.78);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.elogi-soft-section {
+  background: rgba(255,255,255,0.02);
+}
+
+.elogi-list-large {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.elogi-list-large li + li {
+  margin-top: 10px;
+}
+
+.elogi-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.elogi-step {
+  border: 1px solid rgba(95, 219, 183, 0.24);
+  border-radius: 22px;
+  padding: 24px 20px;
+  min-height: 210px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elogi-step:hover,
+.elogi-feature-card:hover,
+.elogi-final-showcase figure:hover {
+  transform: translateY(-6px);
+  border-color: rgba(95, 219, 183, 0.52);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.36);
+}
+
+.elogi-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: rgba(95, 219, 183, 0.16);
+  color: #7cf0c8;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.elogi-step h3,
+.elogi-feature-card h3,
+.elogi-ui-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.elogi-step p,
+.elogi-feature-card p,
+.elogi-ui-card p {
+  color: rgba(226,232,240,0.76);
+  font-size: 14px;
+}
+
+.elogi-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.elogi-feature-card {
+  min-height: 160px;
+  padding: 22px;
+  border: 1px solid rgba(95, 219, 183, 0.22);
+  border-radius: 22px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elogi-visual-panel {
+  min-height: 360px;
+  border-radius: 28px;
+  border: 1px solid rgba(95, 219, 183, 0.28);
+  background:
+    linear-gradient(135deg, rgba(95, 219, 183, 0.12), rgba(255,255,255,0.02)),
+    rgba(15,23,42,0.88);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.elogi-swatch {
+  position: absolute;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.elogi-swatch.mint {
+  width: 150px;
+  height: 150px;
+  right: 28px;
+  top: 28px;
+  background: #5fdbb7;
+}
+
+.elogi-swatch.white {
+  width: 96px;
+  height: 96px;
+  right: 148px;
+  top: 148px;
+  background: #f8fafc;
+}
+
+.elogi-swatch.dark {
+  width: 118px;
+  height: 118px;
+  right: 52px;
+  bottom: 36px;
+  background: #111827;
+}
+
+.elogi-ui-card {
+  position: relative;
+  z-index: 1;
+  max-width: 280px;
+  margin-top: 120px;
+  padding: 24px;
+  border: 1px solid rgba(95, 219, 183, 0.28);
+  border-radius: 24px;
+}
+
+.elogi-pill {
+  display: inline-flex;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: #5fdbb7;
+  color: #06251e;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.elogi-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.elogi-showcase figure {
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid rgba(95, 219, 183, 0.3);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+
+.elogi-showcase-main {
+  grid-column: 1 / -1;
+}
+
+.elogi-showcase-main img {
+  aspect-ratio: 16 / 8;
+}
+
+.elogi-showcase figure:not(.elogi-showcase-main) img {
+  aspect-ratio: 4 / 3;
+}
+
+.elogi-final-showcase {
+  display: grid;
+  gap: 20px;
+}
+
+.elogi-final-feature,
+.elogi-final-strip figure {
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(95, 219, 183, 0.28);
+  background:
+    radial-gradient(circle at top left, rgba(95, 219, 183, 0.16), transparent 42%),
+    rgba(255,255,255,0.035);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.38);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elogi-final-feature {
+  padding: 18px;
+}
+
+.elogi-final-feature img {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.elogi-final-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.elogi-final-strip figure {
+  padding: 14px;
+}
+
+.elogi-final-strip img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.elogi-reflection .ready-box {
+  border-color: rgba(95, 219, 183, 0.24);
+  background: linear-gradient(145deg, rgba(12, 38, 32, 0.86), rgba(255,255,255,0.03));
+}
+
+/* ============================================
+   Prank Sound Case Study
+   ============================================ */
+
+.prank-hero {
+  padding: 96px 0 56px;
+}
+
+.prank-hero-copy {
+  max-width: 960px;
+}
+
+.prank-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.prank-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 216, 62, 0.14);
+  border: 1px solid rgba(255, 216, 62, 0.32);
+  color: #fff5c7;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.prank-hero-media {
+  margin-top: 40px;
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 216, 62, 0.38);
+  background: radial-gradient(circle at top left, rgba(255,216,62,0.22), rgba(255,122,24,0.06));
+  box-shadow: 0 42px 120px rgba(0,0,0,0.68);
+}
+
+.prank-showcase img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prank-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.prank-lead {
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+}
+
+.prank-soft-section {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(255,216,62,0.08), transparent 28%),
+    rgba(255,255,255,0.02);
+}
+
+.prank-highlight-card,
+.prank-step,
+.prank-feature-card,
+.prank-note-card {
+  background: linear-gradient(145deg, rgba(71, 38, 12, 0.92), rgba(15, 23, 42, 0.92));
+  border-color: rgba(255, 196, 48, 0.28);
+}
+
+.prank-list-large {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.prank-list-large li + li {
+  margin-top: 10px;
+}
+
+.prank-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.prank-step {
+  min-height: 210px;
+  padding: 24px 20px;
+  border: 1px solid rgba(255, 196, 48, 0.25);
+  border-radius: 22px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prank-step:hover,
+.prank-feature-card:hover,
+.prank-screen-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 216, 62, 0.58);
+  box-shadow: 0 24px 72px rgba(0,0,0,0.38);
+}
+
+.prank-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: rgba(255, 122, 24, 0.22);
+  color: #ffd83e;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.prank-step h3,
+.prank-feature-card h3,
+.prank-screen-card h3,
+.prank-note-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.prank-step p,
+.prank-feature-card p,
+.prank-note-card p {
+  color: rgba(255,248,226,0.78);
+  font-size: 14px;
+}
+
+.prank-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.prank-feature-card {
+  min-height: 170px;
+  padding: 22px;
+  border: 1px solid rgba(255, 196, 48, 0.24);
+  border-radius: 22px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prank-visual-panel {
+  min-height: 360px;
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 196, 48, 0.3);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(255,255,255,0.22), transparent 18%),
+    linear-gradient(135deg, rgba(255,122,24,0.38), rgba(255,216,62,0.12)),
+    rgba(15,23,42,0.88);
+}
+
+.prank-visual-panel::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.16) 49%, rgba(255,255,255,0.16) 51%, transparent 52%),
+    radial-gradient(circle, rgba(255,255,255,0.14) 2px, transparent 3px);
+  background-size: 160px 160px, 28px 28px;
+  opacity: 0.6;
+}
+
+.prank-pop-label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  margin-right: 10px;
+  padding: 12px 18px;
+  border-radius: 18px;
+  background: #fff6d7;
+  color: #2d2118;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  transform: rotate(-5deg);
+}
+
+.prank-pop-label.second {
+  background: #ff7a18;
+  color: #fff;
+  transform: rotate(5deg);
+}
+
+.prank-color-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 12px;
+  margin: 72px 0 24px;
+}
+
+.prank-color-row span {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.34);
+}
+
+.prank-note-card {
+  position: relative;
+  z-index: 1;
+  max-width: 320px;
+  padding: 24px;
+  border: 1px solid rgba(255, 196, 48, 0.28);
+  border-radius: 24px;
+}
+
+.prank-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.prank-screen-card {
+  padding: 16px;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 196, 48, 0.28);
+  background:
+    radial-gradient(circle at top, rgba(255,216,62,0.12), transparent 34%),
+    rgba(255,255,255,0.035);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.32);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prank-screen-card.is-featured {
+  border-color: rgba(255, 216, 62, 0.56);
+}
+
+.prank-screen-card img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+}
+
+.prank-screen-card h3 {
+  margin: 14px 4px 2px;
+  color: #fff6d7;
+}
+
+.prank-reflection .ready-box {
+  border-color: rgba(255, 196, 48, 0.3);
+  background: linear-gradient(145deg, rgba(71, 38, 12, 0.86), rgba(255,255,255,0.03));
+}
+
+/* ============================================
    Footer
    ============================================ */
 
@@ -1549,6 +2097,28 @@ body.nav-open {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .elogi-meta-grid,
+  .elogi-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .elogi-final-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .elogi-process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .prank-process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .prank-feature-grid,
+  .prank-screen-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .about-hero-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1603,6 +2173,24 @@ body.nav-open {
   }
 
   .case-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .elogi-process-grid,
+  .elogi-feature-grid,
+  .elogi-showcase,
+  .elogi-final-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .elogi-showcase-main img,
+  .elogi-showcase figure:not(.elogi-showcase-main) img {
+    aspect-ratio: 16 / 11;
+  }
+
+  .prank-process-grid,
+  .prank-feature-grid,
+  .prank-screen-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1899,6 +2487,70 @@ body.nav-open {
   /* Case Study */
   .case-hero {
     padding: 80px 0 32px;
+  }
+
+  .elogi-hero {
+    padding: 80px 0 36px;
+  }
+
+  .elogi-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .elogi-hero-media {
+    border-radius: 22px;
+  }
+
+  .elogi-step,
+  .elogi-feature-card {
+    min-height: auto;
+  }
+
+  .elogi-visual-panel {
+    min-height: 320px;
+    padding: 22px;
+  }
+
+  .elogi-ui-card {
+    margin-top: 110px;
+  }
+
+  .elogi-final-feature {
+    padding: 10px;
+    border-radius: 22px;
+  }
+
+  .elogi-final-strip img {
+    height: 280px;
+  }
+
+  .prank-hero {
+    padding: 80px 0 36px;
+  }
+
+  .prank-hero-media {
+    border-radius: 22px;
+  }
+
+  .prank-badges span {
+    min-height: 34px;
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+
+  .prank-step,
+  .prank-feature-card {
+    min-height: auto;
+  }
+
+  .prank-visual-panel {
+    min-height: 320px;
+    padding: 22px;
+  }
+
+  .prank-screen-card img {
+    height: 300px;
   }
   
   .projects-hero {
