@@ -1035,13 +1035,15 @@ body {
 
 .about-teaser-inner {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 44px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.055) 0%, rgba(255,255,255,0.018) 100%);
   border-radius: 28px;
   padding: 48px 56px;
   border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 24px 90px rgba(0,0,0,0.24);
 }
 
 .about-teaser-text h2 {
@@ -1078,18 +1080,67 @@ body {
 
 .about-teaser-visual {
   position: relative;
-  min-height: 160px;
+  min-height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-teaser-shape {
-  width: 120px;
-  height: 120px;
-  border-radius: 24px;
-  background: linear-gradient(135deg, rgba(43,75,238,0.3) 0%, rgba(96,165,250,0.15) 100%);
-  border: 1px solid rgba(255,255,255,0.08);
+.home-profile-card {
+  width: min(100%, 360px);
+  padding: 18px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.035));
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 28px 90px rgba(0,0,0,0.32);
+}
+
+.home-profile-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.home-profile-copy {
+  padding: 18px 4px 12px;
+}
+
+.home-profile-copy span {
+  display: block;
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
+}
+
+.home-profile-copy strong {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.home-profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.home-profile-tags span {
+  display: inline-flex;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(138,180,255,0.10);
+  border: 1px solid rgba(138,180,255,0.16);
+  color: rgba(255,255,255,0.76);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /* ============================================
