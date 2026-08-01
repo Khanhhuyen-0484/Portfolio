@@ -803,6 +803,69 @@ body {
   margin-top: 0;
 }
 
+.project-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.project-proof span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.72);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.portfolio-snapshot {
+  padding: 8px 0 48px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.snapshot-grid article {
+  padding: 22px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.075), rgba(255,255,255,0.028));
+  border: 1px solid rgba(255,255,255,0.09);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.22);
+}
+
+.snapshot-grid span {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.48);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.snapshot-grid strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.snapshot-grid p {
+  color: rgba(255,255,255,0.62);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .projects-grid-minimal .project-card {
   background: rgba(255,255,255,0.025);
 }
@@ -1358,6 +1421,46 @@ body {
   border-radius: 22px;
   border: 1px solid rgba(148,163,184,0.4);
   box-shadow: 0 28px 90px rgba(15,23,42,0.85);
+}
+
+.contribution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contribution-grid article {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(15,23,42,0.78);
+  border: 1px solid rgba(148,163,184,0.22);
+  box-shadow: 0 22px 70px rgba(15,23,42,0.35);
+}
+
+.contribution-grid span {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.contribution-grid h3 {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.contribution-grid p {
+  color: rgba(226,232,240,0.72);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 /* ============================================
@@ -2902,6 +3005,11 @@ body.nav-open {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .snapshot-grid,
+  .contribution-grid {
+    grid-template-columns: 1fr;
+  }
+
   .elogi-meta-grid,
   .elogi-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3027,6 +3135,15 @@ body.nav-open {
 
   .case-stats {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-snapshot {
+    padding: 0 0 36px;
+  }
+
+  .snapshot-grid article,
+  .contribution-grid article {
+    padding: 18px;
   }
 
   .elogi-process-grid,
