@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Camera - Mobile Camera App | Khanh Huyen</title>
+  <meta name="description" content="Ultra Camera is a mobile camera app case study focused on capture, gallery and photo editing flows.">
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="gradient"></div>
+
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><span class="logo-text">KH.</span></a>
+    </div>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="About.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link mobile-only">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn-contact desktop-only">Contact</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="ultra-hero">
+    <div class="container ultra-hero-grid">
+      <div class="ultra-hero-copy reveal">
+        <p class="case-breadcrumb">Case study - Mobile Camera App</p>
+        <h1 class="case-title">Ultra Camera</h1>
+        <p class="case-subtitle">A professional mobile camera experience for capturing, organizing and editing photos with a clean purple UI system.</p>
+
+        <div class="elogi-hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.nhn.ultracamera&pcampaignid=web_share" class="btn-primary" target="_blank" rel="noopener noreferrer">View App</a>
+          <a href="#screens" class="btn-secondary">View Screens</a>
+          <a href="projects.html" class="btn-secondary">Back to Projects</a>
+        </div>
+
+        <div class="elogi-meta-grid">
+          <div class="case-stat">
+            <p class="case-stat-label">Project type</p>
+            <p class="case-stat-value">Mobile Camera App</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Role</p>
+            <p class="case-stat-value">UI/UX Designer</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Tool</p>
+            <p class="case-stat-value">Figma</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Focus</p>
+            <p class="case-stat-value">Capture &amp; Edit</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ultra-hero-media reveal">
+        <img src="assets/images/ultracamera/ultra-mockup.png" alt="Ultra Camera mobile app mockup">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header">
+          <p class="case-kicker">Project overview</p>
+          <h2 class="case-heading">A complete camera flow from capture to final edit.</h2>
+        </div>
+        <p class="elogi-lead">
+          Ultra Camera is a mobile app concept designed for users who want a more capable camera experience on their phone. The app combines quick capture, gallery browsing and photo editing in one polished flow.
+        </p>
+      </div>
+
+      <div class="case-card ultra-highlight-card">
+        <p class="case-label">Scope</p>
+        <h3>Capture, gallery and editing.</h3>
+        <ul class="case-list">
+          <li>Three-step onboarding flow.</li>
+          <li>Camera home with quick feature entry points.</li>
+          <li>Camera screen with capture controls and quick tool actions.</li>
+          <li>Gallery layout for browsing saved photos.</li>
+          <li>Photo editor with blur, eraser and adjustment controls.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section ultra-soft-section">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header">
+          <p class="case-kicker">Problem</p>
+          <h2 class="case-heading">Advanced camera tools can feel too technical.</h2>
+        </div>
+        <ul class="case-list elogi-list-large">
+          <li>Users need fast access to capture, gallery and edit actions without searching through menus.</li>
+          <li>Editing controls need to feel powerful while staying clear and tap-friendly.</li>
+          <li>The interface needs to balance a professional feature set with a friendly visual tone.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="case-section-header">
+          <p class="case-kicker">Goal</p>
+          <h2 class="case-heading">Make pro-style camera actions easier to understand.</h2>
+        </div>
+        <ul class="case-list elogi-list-large">
+          <li>Create a clear first-run experience that explains the app quickly.</li>
+          <li>Highlight the main camera action while keeping secondary tools visible.</li>
+          <li>Design a gallery that feels visual, organized and easy to scan.</li>
+          <li>Make editing controls readable through strong spacing and hierarchy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container reveal">
+      <div class="case-section-header">
+        <p class="case-kicker">Design process</p>
+        <h2 class="case-heading">From app structure to polished mobile screens.</h2>
+      </div>
+
+      <div class="elogi-process-grid">
+        <article class="elogi-step ultra-step">
+          <span>01</span>
+          <h3>Research</h3>
+          <p>Identify the most important actions for a mobile photography workflow.</p>
+        </article>
+        <article class="elogi-step ultra-step">
+          <span>02</span>
+          <h3>User Flow</h3>
+          <p>Connect onboarding, capture, gallery and photo editing into one smooth path.</p>
+        </article>
+        <article class="elogi-step ultra-step">
+          <span>03</span>
+          <h3>Wireframe</h3>
+          <p>Organize controls so primary actions remain easy to reach on mobile.</p>
+        </article>
+        <article class="elogi-step ultra-step">
+          <span>04</span>
+          <h3>UI Design</h3>
+          <p>Apply a purple visual system with soft cards, clear buttons and high contrast.</p>
+        </article>
+        <article class="elogi-step ultra-step">
+          <span>05</span>
+          <h3>Prototype</h3>
+          <p>Prepare key screens for a realistic app walkthrough and portfolio case.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section ultra-soft-section">
+    <div class="container">
+      <div class="case-section-header">
+        <p class="case-kicker">Screen showcase</p>
+        <h2 class="case-heading">A polished flow from onboarding to editing.</h2>
+      </div>
+
+      <div class="ultra-showcase" id="screens">
+        <div class="ultra-showcase-block">
+          <div class="ultra-showcase-copy">
+            <p class="case-kicker">Onboarding</p>
+            <h3>Introduce the value before users enter the camera.</h3>
+            <p>Three onboarding screens explain camera quality, smart editing and quick sharing in a lightweight first-run flow.</p>
+          </div>
+
+          <div class="ultra-onboarding-row">
+            <article class="ultra-phone-card">
+              <span>01</span>
+              <img src="assets/images/ultracamera/ultra-onboarding-01.png?v=2" alt="Ultra Camera onboarding screen 1">
+            </article>
+            <article class="ultra-phone-card is-raised">
+              <span>02</span>
+              <img src="assets/images/ultracamera/ultra-onboarding-02.png?v=2" alt="Ultra Camera onboarding screen 2">
+            </article>
+            <article class="ultra-phone-card">
+              <span>03</span>
+              <img src="assets/images/ultracamera/ultra-onboarding-03.png?v=2" alt="Ultra Camera onboarding screen 3">
+            </article>
+          </div>
+        </div>
+
+        <div class="ultra-showcase-block ultra-core-block">
+          <div class="ultra-showcase-copy">
+            <p class="case-kicker">Core experience</p>
+            <h3>Capture, browse and edit in one connected flow.</h3>
+            <p>The main screens are presented as clean device mockups so the interface feels like a real shipped mobile product.</p>
+          </div>
+
+          <div class="ultra-core-grid">
+            <article class="ultra-phone-card is-featured">
+              <span>Home</span>
+              <img src="assets/images/ultracamera/ultra-home.png?v=2" alt="Ultra Camera home screen">
+            </article>
+            <article class="ultra-phone-card">
+              <span>Camera</span>
+              <img src="assets/images/ultracamera/ultra-camera.png?v=2" alt="Ultra Camera camera screen">
+            </article>
+            <article class="ultra-phone-card">
+              <span>Gallery</span>
+              <img src="assets/images/ultracamera/ultra-gallery.png?v=2" alt="Ultra Camera gallery screen">
+            </article>
+            <article class="ultra-phone-card">
+              <span>Edit</span>
+              <img src="assets/images/ultracamera/ultra-photo-edit.png?v=2" alt="Ultra Camera photo editor screen">
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header">
+          <p class="case-kicker">Visual design</p>
+          <h2 class="case-heading">Soft purple, clean cards and strong capture actions.</h2>
+        </div>
+        <ul class="case-list elogi-list-large">
+          <li>Purple is used as the primary brand color for buttons, active states and highlights.</li>
+          <li>Rounded cards make the feature sections feel friendly and modern.</li>
+          <li>The camera action is treated as the strongest visual element in the home flow.</li>
+          <li>Editing sliders and tool buttons are separated clearly to reduce visual clutter.</li>
+        </ul>
+      </div>
+
+      <div class="ultra-visual-panel">
+        <div class="ultra-color-row">
+          <span style="background:#5b35d5"></span>
+          <span style="background:#8f78f0"></span>
+          <span style="background:#eeeafe"></span>
+          <span style="background:#ffffff"></span>
+        </div>
+        <div class="ultra-ui-card">
+          <span class="elogi-pill">Take Photo</span>
+          <h3>Primary action</h3>
+          <p>The main capture action stays prominent while supporting tools remain easy to scan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ready-section ultra-reflection">
+    <div class="ready-box reveal">
+      <p class="case-kicker">Reflection</p>
+      <h2>Designing a camera app that feels capable but simple.</h2>
+      <p>
+        Ultra Camera helped me explore how to present advanced photo features in a clean mobile interface. The result is a focused flow that supports capture, browsing and editing without overwhelming the user.
+      </p>
+      <div class="ready-buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.nhn.ultracamera&pcampaignid=web_share" class="primary-btn" target="_blank" rel="noopener noreferrer">View App</a>
+        <a href="projects.html" class="primary-btn">Back to projects</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Khanh Huyen</h2>
+        <p class="footer-tagline">Crafting digital experiences for next-generation SaaS brands and creative startups.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">(c) 2026 Khanh Huyen. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
