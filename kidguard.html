@@ -3,47 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KidGuard App - Parental Control Mobile App | Khanh Huyen</title>
-  <meta name="description" content="KidGuard is a parental control mobile app case study for screen time, safe apps, child setup and lock states.">
+  <title>KidGuard App - Parental Control Mobile App | Khánh Huyền</title>
+  <meta name="description" content="KidGuard là hồ sơ thiết kế UI/UX ứng dụng quản lý thiết bị gia đình: quản lý thời gian màn hình, ứng dụng an toàn và trạng thái khóa.">
+  <meta name="author" content="Khánh Huyền">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="KidGuard App - Parental Control Mobile App | Khánh Huyền">
+  <meta property="og:description" content="Hồ sơ thiết kế UI/UX KidGuard: Giải pháp quản lý thiết bị và bảo vệ con trẻ thân thiện.">
+  <meta property="og:image" content="assets/images/kidguard/kidguard-mockup.png">
 
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
 <div class="container">
+  <!-- Header -->
   <header class="header">
     <div class="logo">
       <a href="index.html"><span class="logo-text">KH.</span></a>
     </div>
 
     <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
-      <a href="About.html" class="nav-link">Giới thiệu</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
       <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
-
+    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
+    
     <button class="hamburger" id="hamburger" aria-label="Mở menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-
+  
+  <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Trang chủ</a>
-      <a href="projects.html" class="mobile-nav-link">Dự án</a>
-      <a href="About.html" class="mobile-nav-link">Giới thiệu</a>
-      <a href="contact.html" class="mobile-nav-link">Liên hệ</a>
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
+      <a href="projects.html" class="mobile-nav-link active">Dự án</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
     </nav>
   </div>
 </div>
@@ -52,18 +61,18 @@
   <section class="kid-hero">
     <div class="container kid-hero-grid">
       <div class="kid-hero-copy reveal">
-        <p class="case-breadcrumb">Hồ sơ dự án - Family Safety App</p>
+        <p class="case-breadcrumb">Hồ sơ dự án · Family Safety App</p>
         <h1 class="case-title">KidGuard App</h1>
-        <p class="case-subtitle">A parental control experience that helps families manage screen time, safe apps and child device access with calm, friendly UI.</p>
+        <p class="case-subtitle">Ứng dụng quản lý thiết bị và thời gian sử dụng màn hình của trẻ nhỏ, mang đến trải nghiệm trực quan cho cha mẹ và giao diện thân thiện, dễ hiểu cho con trẻ.</p>
 
         <div class="elogi-hero-actions">
-          <a href="#screens" class="btn-primary">Xem màn hình</a>
-          <a href="projects.html" class="btn-secondary">Quay lại dự án</a>
+          <a href="#screens" class="btn-primary">Xem màn hình thiết kế</a>
+          <a href="projects.html" class="btn-secondary">Quay lại danh mục</a>
         </div>
       </div>
 
       <div class="kid-hero-media reveal">
-        <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard parental control mockup mobile app">
+        <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard parental control mockup mobile app" loading="lazy">
       </div>
     </div>
   </section>
@@ -73,22 +82,22 @@
       <div>
         <div class="case-section-header">
           <p class="case-kicker">Tổng quan dự án</p>
-          <h2 class="case-heading">A friendly control center for parent and child devices.</h2>
+          <h2 class="case-heading">Trung tâm kiểm soát an toàn và nhẹ nhàng cho thiết bị gia đình.</h2>
         </div>
         <p class="elogi-lead">
-          KidGuard is designed to help parents manage device usage while keeping the child experience simple and understandable. The app covers screen time, app limits, child setup, lock states and time schedules.
+          KidGuard được thiết kế nhằm giúp các bậc cha mẹ dễ dàng thiết lập giới hạn sử dụng thiết bị, quản lý danh mục ứng dụng an toàn mà không gây cảm giác gò bó hay căng thẳng cho trẻ nhỏ.
         </p>
       </div>
 
       <div class="case-card kid-highlight-card">
-        <p class="case-label">Phạm vi</p>
-        <h3>Screen time, setup and safe access.</h3>
+        <p class="case-label">Phạm vi thiết kế</p>
+        <h3>Thời gian màn hình, cài đặt &amp; truy cập an toàn.</h3>
         <ul class="case-list">
-          <li>Parent dashboard with usage history.</li>
-          <li>Daily and custom time setting flows.</li>
-          <li>Child app home and safe play states.</li>
-          <li>Child device setup and connection flow.</li>
-          <li>Lock screen state when time runs out.</li>
+          <li>Bảng điều khiển cho phụ huynh với biểu đồ thời lượng sử dụng.</li>
+          <li>Luồng cài đặt giới hạn thời gian theo ngày và theo khung giờ linh hoạt.</li>
+          <li>Trang chủ giao diện phía trẻ nhỏ với danh sách ứng dụng được phép chơi.</li>
+          <li>Luồng kết nối và ghép đôi thiết bị giữa cha mẹ và con.</li>
+          <li>Màn hình khóa thông minh với thông điệp nhẹ nhàng khi hết thời gian.</li>
         </ul>
       </div>
     </div>
@@ -104,18 +113,18 @@
       <div class="contribution-grid">
         <article>
           <span>01</span>
-          <h3>Parent control flow</h3>
-          <p>Designed dashboard, time setting and setup screens so parents can adjust limits quickly.</p>
+          <h3>Luồng Phụ huynh (Parent Flow)</h3>
+          <p>Thiết kế Dashboard trực quan, cài đặt thời gian và cấu hình thiết bị giúp phụ huynh thao tác nhanh chóng chỉ trong vài bước.</p>
         </article>
         <article>
           <span>02</span>
-          <h3>Child-facing states</h3>
-          <p>Created child home and lock screens that explain available play time in a friendly way.</p>
+          <h3>Trạng thái Trẻ nhỏ (Child Experience)</h3>
+          <p>Xây dựng màn hình trẻ em với hình ảnh vui tươi, giải thích rõ ràng số phút chơi còn lại và trạng thái khóa khi hết giờ.</p>
         </article>
         <article>
           <span>03</span>
-          <h3>Family visual tone</h3>
-          <p>Used soft colors, clear cards and friendly illustrations to make safety controls feel less stressful.</p>
+          <h3>Tone thị giác Gia đình (Family Tone)</h3>
+          <p>Sử dụng màu xanh dương tạo sự tin cậy kết hợp tone vàng dịu và bo góc mềm mại để tính năng kiểm soát không bị cứng nhắc.</p>
         </article>
       </div>
     </div>
@@ -126,25 +135,25 @@
       <div>
         <div class="case-section-header">
           <p class="case-kicker">Vấn đề</p>
-          <h2 class="case-heading">Parental control apps can feel strict and stressful.</h2>
+          <h2 class="case-heading">Các ứng dụng quản lý trẻ em thường bị khô cứng và căng thẳng.</h2>
         </div>
         <ul class="case-list elogi-list-large">
-          <li>Parents need clear controls for screen time and app access.</li>
-          <li>Children need lock states that feel understandable, not confusing.</li>
-          <li>Setup must make device connection and permissions feel simple.</li>
+          <li>Phụ huynh gặp khó khăn khi tìm kiếm các cài đặt giới hạn thời gian phức tạp.</li>
+          <li>Trẻ nhỏ cảm thấy bực bội khi màn hình bị khóa đột ngột mà không có giải thích dễ hiểu.</li>
+          <li>Quá trình kết nối hai thiết bị thường rườm rà với nhiều tầng cấp quyền.</li>
         </ul>
       </div>
 
       <div>
         <div class="case-section-header">
-          <p class="case-kicker">Mục tiêu</p>
-          <h2 class="case-heading">Make safety controls feel calm, visual and easy to adjust.</h2>
+          <p class="case-kicker">Mục tiêu giải pháp</p>
+          <h2 class="case-heading">Biến tính năng kiểm soát trở nên nhẹ nhàng, trực quan và dễ chịu.</h2>
         </div>
         <ul class="case-list elogi-list-large">
-          <li>Use friendly illustrations and soft colors to reduce tension.</li>
-          <li>Surface the most important usage numbers clearly.</li>
-          <li>Separate parent controls from child-facing screens.</li>
-          <li>Make time limits and lock states easy to understand at a glance.</li>
+          <li>Ứng dụng hình minh họa thân thiện để giảm bớt áp lực tâm lý.</li>
+          <li>Làm nổi bật những con số thống kê sử dụng quan trọng nhất trong ngày.</li>
+          <li>Tách biệt rành mạch giữa giao diện quản trị của cha mẹ và giao diện xem của con.</li>
+          <li>Tạo màn hình đếm ngược và thông báo hết giờ một cách tích cực.</li>
         </ul>
       </div>
     </div>
@@ -158,55 +167,55 @@
       </div>
 
       <div class="kid-process">
-        <article><span>01</span><h3>Parent Needs</h3><p>Identify screen time, app restriction and setup needs.</p></article>
-        <article><span>02</span><h3>Child Flow</h3><p>Create simple child-facing screens for allowed and locked states.</p></article>
-        <article><span>03</span><h3>Control Design</h3><p>Structure time settings with clear days, schedules and actions.</p></article>
-        <article><span>04</span><h3>Visual Polish</h3><p>Apply safe, bright colors and rounded cards for a friendly feel.</p></article>
+        <article><span>01</span><h3>Nhu cầu Phụ huynh</h3><p>Khảo sát nhu cầu quản lý thời gian, lọc app và ghép đôi máy.</p></article>
+        <article><span>02</span><h3>Trải nghiệm Con trẻ</h3><p>Tạo màn hình con trực quan, hiển thị rõ app an toàn và trạng thái khóa.</p></article>
+        <article><span>03</span><h3>Cấu trúc Cài đặt</h3><p>Sắp xếp cài đặt lịch trình theo ngày trong tuần và khung giờ khoa học.</p></article>
+        <article><span>04</span><h3>Hoàn thiện UI</h3><p>Áp dụng màu sắc ấm áp, card bo góc lớn và icon minh họa thân thiện.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="case-section kid-soft-section">
-    <div class="container" id="screens">
+  <section class="case-section kid-soft-section" id="screens">
+    <div class="container">
       <div class="case-section-header">
-        <p class="case-kicker">Screen showcase</p>
-        <h2 class="case-heading">Parent controls and child-safe states.</h2>
+        <p class="case-kicker">Showcase Màn hình</p>
+        <h2 class="case-heading">Màn hình điều khiển phụ huynh và trải nghiệm an toàn cho trẻ.</h2>
       </div>
 
       <div class="kid-showcase">
         <article class="kid-feature-screen">
           <div class="kid-screen-copy">
-            <span>Parent dashboard</span>
-            <h3>Track screen time and recent alerts.</h3>
-            <p>A dashboard gives parents a quick view of daily usage, app activity and safety settings.</p>
+            <span>Bảng điều khiển Phụ huynh</span>
+            <h3>Theo dõi thời gian sử dụng và cảnh báo mới nhất.</h3>
+            <p>Dashboard cung cấp cái nhìn tổng quan về thời gian dùng màn hình trong ngày, mức độ sử dụng từng app và trạng thái bảo vệ.</p>
           </div>
-          <img src="assets/images/kidguard/kid-parent-home.png?v=1" alt="KidGuard parent dashboard screen">
+          <img src="assets/images/kidguard/kid-parent-home.png" alt="KidGuard parent dashboard screen" loading="lazy">
         </article>
 
         <div class="kid-screen-row">
           <article>
-            <img src="assets/images/kidguard/kid-time-setting.png?v=1" alt="KidGuard time setting screen">
-            <h3>Time Setting</h3>
+            <img src="assets/images/kidguard/kid-time-setting.png" alt="KidGuard time setting screen" loading="lazy">
+            <h3>Cài đặt thời gian</h3>
           </article>
           <article>
-            <img src="assets/images/kidguard/kid-time-overview.png?v=1" alt="KidGuard time overview screen">
-            <h3>Time Overview</h3>
+            <img src="assets/images/kidguard/kid-time-overview.png" alt="KidGuard time overview screen" loading="lazy">
+            <h3>Tổng quan sử dụng</h3>
           </article>
           <article>
-            <img src="assets/images/kidguard/kid-setup-child.png?v=1" alt="KidGuard setup child device screen">
-            <h3>Setup Child</h3>
+            <img src="assets/images/kidguard/kid-setup-child.png" alt="KidGuard setup child device screen" loading="lazy">
+            <h3>Ghép đôi thiết bị</h3>
           </article>
         </div>
 
         <article class="kid-feature-screen kid-feature-screen-alt">
           <div class="kid-screen-copy">
-            <span>Child experience</span>
-            <h3>Make safe play and lock states easy to understand.</h3>
-            <p>The child side uses friendly visuals to show available apps, time remaining and what happens when play time ends.</p>
+            <span>Trải nghiệm Trẻ nhỏ</span>
+            <h3>Giúp việc vui chơi an toàn và trạng thái khóa dễ hiểu.</h3>
+            <p>Giao diện phía trẻ em sử dụng hình ảnh gần gũi để hiển thị các ứng dụng được phép dùng, thời gian còn lại và gợi ý hoạt động ngoài trời khi hết giờ.</p>
           </div>
           <div class="kid-duo">
-            <img src="assets/images/kidguard/kid-child-home.png?v=1" alt="KidGuard child home screen">
-            <img src="assets/images/kidguard/kid-child-lock.png?v=1" alt="KidGuard child lock screen">
+            <img src="assets/images/kidguard/kid-child-home.png" alt="KidGuard child home screen" loading="lazy">
+            <img src="assets/images/kidguard/kid-child-lock.png" alt="KidGuard child lock screen" loading="lazy">
           </div>
         </article>
       </div>
@@ -217,14 +226,14 @@
     <div class="container case-grid-2 reveal">
       <div>
         <div class="case-section-header">
-          <p class="case-kicker">Thiết kế giao diện</p>
-          <h2 class="case-heading">Bright, safe and family-friendly.</h2>
+          <p class="case-kicker">Thiết kế Giao diện</p>
+          <h2 class="case-heading">Tươi sáng, an toàn và thân thiện với gia đình.</h2>
         </div>
         <ul class="case-list elogi-list-large">
-          <li>Blue communicates structure and trust for parent controls.</li>
-          <li>Soft green and yellow accents make child-facing screens feel warmer.</li>
-          <li>Large cards and circular progress indicators make usage data easy to scan.</li>
-          <li>Friendly illustrations soften the lock and time-limit experience.</li>
+          <li>Màu xanh dương chủ đạo truyền tải sự an tâm và tính bảo mật.</li>
+          <li>Các điểm nhấn xanh ngọc và vàng nhạt giúp giao diện trẻ em ấm áp hơn.</li>
+          <li>Card dạng thẻ lớn và thanh tiến trình tròn giúp quét nhanh dữ liệu.</li>
+          <li>Hình minh họa vui nhộn làm dịu trải nghiệm khi thiết bị bị khóa thời gian.</li>
         </ul>
       </div>
 
@@ -236,9 +245,9 @@
           <span style="background:#fde68a"></span>
         </div>
         <div class="kid-ui-card">
-          <span>Safe Play</span>
-          <h3>Friendly protection</h3>
-          <p>Controls are designed to feel supportive for parents and clear for children.</p>
+          <span>Safe Play UI</span>
+          <h3>Bảo vệ thân thiện</h3>
+          <p>Mọi tính năng được tối ưu để tạo cảm giác đồng hành cùng cha mẹ và con cái.</p>
         </div>
       </div>
     </div>
@@ -247,38 +256,45 @@
   <section class="ready-section kid-reflection">
     <div class="ready-box reveal">
       <p class="case-kicker">Nhìn lại dự án</p>
-      <h2>Thiết kế công cụ kiểm soát để gia đình có thể hiểu nhanh.</h2>
+      <h2>Thiết kế công cụ kiểm soát để gia đình có thể hiểu nhanh và tin tưởng.</h2>
       <p>
-        KidGuard helped me explore how to make parental control features feel useful, calm and approachable across both parent and child experiences.
+        KidGuard giúp mình khám phá sâu sắc cách biến các tính năng kiểm soát phức tạp thành trải nghiệm trực quan, ấm áp và gần gũi cho cả người lớn lẫn trẻ em.
       </p>
       <div class="ready-buttons">
-        <a href="projects.html" class="primary-btn">Quay lại dự án</a>
+        <a href="projects.html" class="primary-btn">Quay lại danh mục dự án</a>
+        <a href="contact.html" class="primary-btn">Trao đổi với mình</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer reveal" id="contact">
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <h2 class="footer-logo">Khanh Huyen</h2>
-        <p class="footer-tagline">Crafting digital experiences for next-generation SaaS brands and creative startups.</p>
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">
+          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
+        </p>
       </div>
+
       <div class="footer-links">
         <div class="footer-column">
           <h4>Liên kết nhanh</h4>
           <ul>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="projects.html">Dự án</a></li>
-            <li><a href="About.html">Giới thiệu</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p class="copyright">(c) 2026 Khanh Huyen. Tất cả quyền được bảo lưu.</p>
+      <p class="copyright">
+        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
+      </p>
     </div>
   </div>
 </footer>

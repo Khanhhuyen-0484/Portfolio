@@ -3,47 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELOGI - Mobile E-commerce App | Khanh Huyen</title>
-  <meta name="description" content="ELOGI is a mobile e-commerce app designed to create a clean and friendly shopping experience.">
+  <title>ELOGI - Mobile E-commerce App | Khánh Huyền</title>
+  <meta name="description" content="ELOGI là ứng dụng thương mại điện tử thời trang trên di động với giao diện tinh gọn, tìm kiếm thông minh và luồng mua sắm mượt mà.">
+  <meta name="author" content="Khánh Huyền">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ELOGI - Mobile E-commerce App | Khánh Huyền">
+  <meta property="og:description" content="Hồ sơ thiết kế UI/UX ELOGI Mobile E-commerce App kèm Prototype tương tác Figma.">
+  <meta property="og:image" content="assets/images/elogi/elogi-hero.png">
 
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
 <div class="container">
+  <!-- Header -->
   <header class="header">
     <div class="logo">
       <a href="index.html"><span class="logo-text">KH.</span></a>
     </div>
 
     <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
-      <a href="About.html" class="nav-link">Giới thiệu</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
       <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
-
+    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
+    
     <button class="hamburger" id="hamburger" aria-label="Mở menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-
+  
+  <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Trang chủ</a>
-      <a href="projects.html" class="mobile-nav-link">Dự án</a>
-      <a href="About.html" class="mobile-nav-link">Giới thiệu</a>
-      <a href="contact.html" class="mobile-nav-link">Liên hệ</a>
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
+      <a href="projects.html" class="mobile-nav-link active">Dự án</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
     </nav>
   </div>
 </div>
@@ -52,254 +61,106 @@
   <section class="elogi-hero">
     <div class="container">
       <div class="elogi-hero-copy reveal">
-        <p class="case-breadcrumb">Hồ sơ dự án - Mobile App</p>
+        <p class="case-breadcrumb">Hồ sơ dự án · Mobile E-commerce</p>
         <h1 class="case-title">ELOGI - Mobile E-commerce App</h1>
-        <p class="case-subtitle">A clean and friendly shopping experience for mobile users.</p>
+        <p class="case-subtitle">Trải nghiệm mua sắm thời trang cao cấp trên di động với giao diện tinh gọn, trực quan và tối ưu tỷ lệ chuyển đổi.</p>
 
         <div class="elogi-hero-actions">
-          <a href="https://www.figma.com/proto/JVkgeRjajj1WXY7ekwyJju/Huyen?node-id=175-13609&t=KbwG0qGUMvmLVmr9-0&scaling=scale-down&content-scaling=fixed&page-id=174%3A6778" class="btn-primary" target="_blank" rel="noopener noreferrer">Xem prototype</a>
+          <a href="https://www.figma.com/proto/JVkgeRjajj1WXY7ekwyJju/Huyen?node-id=175-13609&t=KbwG0qGUMvmLVmr9-0&scaling=scale-down&content-scaling=fixed&page-id=174%3A6778" class="btn-primary" target="_blank" rel="noopener noreferrer">Xem Prototype Figma</a>
+          <a href="#screens" class="btn-secondary">Xem chi tiết màn hình</a>
           <a href="projects.html" class="btn-secondary">Quay lại dự án</a>
         </div>
 
         <div class="elogi-meta-grid">
           <div class="case-stat">
             <p class="case-stat-label">Loại dự án</p>
-            <p class="case-stat-value">Mobile E-commerce App</p>
+            <p class="case-stat-value">E-commerce App</p>
           </div>
           <div class="case-stat">
             <p class="case-stat-label">Vai trò</p>
             <p class="case-stat-value">UI/UX Designer</p>
           </div>
           <div class="case-stat">
-            <p class="case-stat-label">Tool</p>
+            <p class="case-stat-label">Công cụ</p>
             <p class="case-stat-value">Figma</p>
           </div>
           <div class="case-stat">
-            <p class="case-stat-label">Nền tảng</p>
-            <p class="case-stat-value">Mobile App</p>
+            <p class="case-stat-label">Trọng tâm</p>
+            <p class="case-stat-value">Shopping Flow &amp; UI System</p>
           </div>
         </div>
       </div>
 
       <div class="elogi-hero-media reveal">
-        <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI mockup mobile app hero">
+        <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI mobile e-commerce mockup" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section class="case-section">
+  <section class="case-section" id="details">
     <div class="container case-grid-2 reveal">
       <div>
         <div class="case-section-header">
           <p class="case-kicker">Tổng quan dự án</p>
-          <h2 class="case-heading">A complete shopping flow for mobile users.</h2>
+          <h2 class="case-heading">Nâng tầm trải nghiệm mua sắm thời trang trên thiết bị di động.</h2>
         </div>
         <p class="elogi-lead">
-          ELOGI is a mobile e-commerce app designed to create a clean and friendly shopping experience. The app includes product search, filtering, product details, chat with sellers, notifications, settings and delivery tracking.
-        </p>
-        <p>
-          It helps users search for products, view clear product information, chat with sellers, receive updates and track delivery progress after purchase.
+          ELOGI được xây dựng nhằm giải quyết bài toán bỏ dở giỏ hàng phổ biến trên các nền tảng mua sắm trực tuyến. Bằng cách tái cấu trúc luồng duyệt sản phẩm, hỗ trợ chat tư vấn trực tiếp và rút gọn quy trình thanh toán còn 3 bước, ứng dụng giúp người dùng ra quyết định mua hàng nhanh chóng và tự tin hơn.
         </p>
       </div>
 
       <div class="case-card elogi-highlight-card">
-        <p class="case-label">Phạm vi</p>
-        <h3>Clean commerce experience</h3>
+        <p class="case-label">Phạm vi thiết kế</p>
+        <h3>Luồng mua sắm liền mạch từ khám phá đến thanh toán.</h3>
         <ul class="case-list">
-          <li>Product discovery and filtering.</li>
-          <li>Product detail pages with clear purchase actions.</li>
-          <li>Chat, notifications, settings and delivery tracking.</li>
-          <li>Consistent mobile UI system using mint green as the primary color.</li>
+          <li>Onboarding định hình phong cách thời trang cá nhân.</li>
+          <li>Trang chủ với banner khuyến mãi, bộ sưu tập xu hướng và gợi ý sản phẩm.</li>
+          <li>Tìm kiếm thông minh với bộ lọc đa tiêu chí (màu sắc, size, giá, đánh giá).</li>
+          <li>Trang chi tiết sản phẩm rõ ràng, chọn biến thể tức thì.</li>
+          <li>Hệ thống chat trực tiếp với người bán và chăm sóc khách hàng.</li>
+          <li>Giỏ hàng và luồng Checkout rút gọn kèm theo dõi vận đơn thời gian thực.</li>
         </ul>
       </div>
     </div>
   </section>
 
   <section class="case-section elogi-soft-section">
-    <div class="container case-grid-2 reveal">
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Vấn đề</p>
-          <h2 class="case-heading">Online shopping can feel crowded and hard to follow.</h2>
-        </div>
-        <ul class="case-list elogi-list-large">
-          <li>Online shoppers often struggle to find the right product, understand product details, communicate with sellers and follow their orders after purchase.</li>
-          <li>Many e-commerce apps place too much information on one screen, making the experience feel crowded and difficult to focus on.</li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Mục tiêu</p>
-          <h2 class="case-heading">Make shopping simpler, faster and more action-focused.</h2>
-        </div>
-        <ul class="case-list elogi-list-large">
-          <li>Design a shopping interface that feels simple, modern and easy to use.</li>
-          <li>Help users search and filter products more quickly.</li>
-          <li>Present product information with clear hierarchy.</li>
-          <li>Make primary CTAs such as "Buy now" easy to notice.</li>
-          <li>Support seller chat and delivery tracking within the shopping flow.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section">
     <div class="container reveal">
       <div class="case-section-header">
-        <p class="case-kicker">Quy trình thiết kế</p>
-        <h2 class="case-heading">From research to interactive prototype.</h2>
+        <p class="case-kicker">Đóng góp của mình</p>
+        <h2 class="case-heading">Các phần trọng tâm mình đã thực hiện.</h2>
       </div>
 
-      <div class="elogi-process-grid">
-        <article class="elogi-step">
+      <div class="contribution-grid">
+        <article>
           <span>01</span>
-          <h3>Research</h3>
-          <p>Understand user needs, common purchase behaviors and friction points in mobile shopping.</p>
+          <h3>Tối ưu Checkout 3 bước</h3>
+          <p>Rút gọn luồng thanh toán còn: Địa chỉ $ightarrow$ Phương thức thanh toán $ightarrow$ Xác nhận, giảm tỷ lệ bỏ giỏ hàng.</p>
         </article>
-        <article class="elogi-step">
+        <article>
           <span>02</span>
-          <h3>User Flow</h3>
-          <p>Map product discovery, product detail, checkout intent, chat and delivery tracking paths.</p>
+          <h3>Design System &amp; Tokens</h3>
+          <p>Xây dựng hệ thống UI Kit, components tái sử dụng (Buttons, Cards, Inputs, Badges) chuẩn auto-layout Figma.</p>
         </article>
-        <article class="elogi-step">
+        <article>
           <span>03</span>
-          <h3>Wireframe</h3>
-          <p>Define layout hierarchy for home, search, product detail and support screens.</p>
-        </article>
-        <article class="elogi-step">
-          <span>04</span>
-          <h3>UI Design</h3>
-          <p>Apply the mint color system, rounded cards, simple icons and strong CTA hierarchy.</p>
-        </article>
-        <article class="elogi-step">
-          <span>05</span>
-          <h3>Prototype</h3>
-          <p>Connect screens into a complete mobile flow to test the shopping experience.</p>
+          <h3>Prototype tương tác cao</h3>
+          <p>Tạo luồng prototype hoàn chỉnh có thể test trực tiếp trải nghiệm thêm vào giỏ, lọc đồ và thanh toán.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="case-section elogi-soft-section">
+  <section class="case-section" id="screens">
     <div class="container reveal">
       <div class="case-section-header">
-        <p class="case-kicker">Tính năng chính</p>
-        <h2 class="case-heading">Core screens for a complete e-commerce app.</h2>
+        <p class="case-kicker">Showcase Thiết kế</p>
+        <h2 class="case-heading">Bộ giao diện màn hình hoàn chỉnh của ELOGI.</h2>
       </div>
 
-      <div class="elogi-feature-grid">
-        <article class="elogi-feature-card">
-          <h3>Trang chủ</h3>
-          <p>Displays promotional banners, product categories and recommended products.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Search &amp; Filter</h3>
-          <p>Helps users find and narrow down products based on their needs.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Product Detail</h3>
-          <p>Shows images, product name, price, description, reviews and a clear buy button.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Chat</h3>
-          <p>Allows users to communicate directly with the seller before purchasing.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Notification</h3>
-          <p>Keeps users updated on orders, offers, messages and system notifications.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Delivery Tracking</h3>
-          <p>Shows order status and delivery progress in a simple tracking view.</p>
-        </article>
-        <article class="elogi-feature-card">
-          <h3>Settings</h3>
-          <p>Lets users manage their account, notifications and app preferences.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section">
-    <div class="container case-grid-2 reveal">
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Thiết kế giao diện</p>
-          <h2 class="case-heading">Mint, spacious and easy to scan.</h2>
-        </div>
-        <ul class="case-list elogi-list-large">
-          <li>Mint green is used as the primary brand color.</li>
-          <li>The interface uses generous whitespace, rounded cards and simple icons.</li>
-          <li>Primary CTA buttons use green to stand out from the rest of the layout.</li>
-          <li>Product cards include product images, names, prices and cart actions.</li>
-          <li>Bottom navigation helps users move quickly between core app features.</li>
-        </ul>
-      </div>
-
-      <div class="elogi-visual-panel">
-        <div class="elogi-swatch mint"></div>
-        <div class="elogi-swatch white"></div>
-        <div class="elogi-swatch dark"></div>
-        <div class="elogi-ui-card">
-          <span class="elogi-pill">Buy now</span>
-          <h3>Primary CTA</h3>
-          <p>Strong green actions guide users toward purchase without adding visual noise.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section elogi-soft-section">
-    <div class="container reveal">
-      <div class="case-section-header">
-        <p class="case-kicker">Mockup showcase</p>
-        <h2 class="case-heading">App mockups across the shopping journey.</h2>
-      </div>
-
-      <div class="elogi-showcase">
-        <figure class="elogi-showcase-main">
-          <img src="assets/images/elogi/elogi-full-screens.png" alt="ELOGI full mobile app screen collection">
-        </figure>
-        <figure>
-          <img src="assets/images/elogi/elogi-mockup-01.png" alt="ELOGI product discovery mockup">
-        </figure>
-        <figure>
-          <img src="assets/images/elogi/elogi-mockup-02.png" alt="ELOGI delivery tracking mockup">
-        </figure>
-        <figure>
-          <img src="assets/images/elogi/elogi-banner-01.png" alt="ELOGI promotional banner mockup">
-        </figure>
-        <figure>
-          <img src="assets/images/elogi/elogi-banner-02.png" alt="ELOGI mobile shopping banner mockup">
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section">
-    <div class="container reveal">
-      <div class="case-section-header">
-        <p class="case-kicker">Màn hình hoàn thiện</p>
-        <h2 class="case-heading">Key app screens in one consistent system.</h2>
-      </div>
-
-      <div class="elogi-final-showcase">
-        <figure class="elogi-final-feature">
-          <img src="assets/images/elogi/elogi-full-screens.png" alt="ELOGI final screen overview">
-        </figure>
-
-        <div class="elogi-final-strip">
-          <figure>
-            <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI final home screen">
-          </figure>
-          <figure>
-            <img src="assets/images/elogi/elogi-mockup-01.png" alt="ELOGI final search and filter screen">
-          </figure>
-          <figure>
-            <img src="assets/images/elogi/elogi-mockup-02.png" alt="ELOGI final tracking screen">
-          </figure>
-        </div>
+      <div style="margin-top: 32px; text-align: center;">
+        <img src="assets/images/elogi/elogi-banner-01.png" alt="ELOGI banner showcase" style="width: 100%; border-radius: 16px; margin-bottom: 24px;" loading="lazy">
+        <img src="assets/images/elogi/elogi-full-screens.png" alt="ELOGI full screens" style="width: 100%; border-radius: 16px;" loading="lazy">
       </div>
     </div>
   </section>
@@ -307,27 +168,26 @@
   <section class="ready-section elogi-reflection">
     <div class="ready-box reveal">
       <p class="case-kicker">Nhìn lại dự án</p>
-      <h2>Building a full mobile shopping flow.</h2>
+      <h2>Dự án mẫu mực về thiết kế ứng dụng thương mại điện tử chuyên nghiệp.</h2>
       <p>
-        Through this project, I learned how to build a complete mobile shopping flow, from product search and product details to seller chat and delivery tracking.
-      </p>
-      <p>
-        The project helped me improve how I organize information, create a consistent interface system and highlight the user's primary actions.
+        ELOGI là dự án giúp mình củng cố toàn diện kỹ năng xây dựng Design System quy mô lớn, tối ưu hóa các điểm chạm chuyển đổi (Conversion touchpoints) và thiết kế trải nghiệm người dùng hiện đại.
       </p>
       <div class="ready-buttons">
-        <a href="https://www.figma.com/proto/JVkgeRjajj1WXY7ekwyJju/Huyen?node-id=175-13609&t=KbwG0qGUMvmLVmr9-0&scaling=scale-down&content-scaling=fixed&page-id=174%3A6778" class="primary-btn" target="_blank" rel="noopener noreferrer">Xem prototype</a>
-        <a href="projects.html" class="primary-btn">Quay lại dự án</a>
+        <a href="https://www.figma.com/proto/JVkgeRjajj1WXY7ekwyJju/Huyen?node-id=175-13609&t=KbwG0qGUMvmLVmr9-0&scaling=scale-down&content-scaling=fixed&page-id=174%3A6778" class="primary-btn" target="_blank" rel="noopener noreferrer">Xem Prototype Figma</a>
+        <a href="projects.html" class="primary-btn">Quay lại danh mục</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer reveal" id="contact">
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <h2 class="footer-logo">Khanh Huyen</h2>
-        <p class="footer-tagline">Crafting digital experiences for next-generation SaaS brands and creative startups.</p>
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">
+          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
+        </p>
       </div>
 
       <div class="footer-links">
@@ -336,7 +196,7 @@
           <ul>
             <li><a href="index.html">Trang chủ</a></li>
             <li><a href="projects.html">Dự án</a></li>
-            <li><a href="About.html">Giới thiệu</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
           </ul>
         </div>
@@ -344,7 +204,9 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="copyright">(c) 2026 Khanh Huyen. Tất cả quyền được bảo lưu.</p>
+      <p class="copyright">
+        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
+      </p>
     </div>
   </div>
 </footer>

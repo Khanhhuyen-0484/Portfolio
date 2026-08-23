@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Trees App - Mobile App UI/UX | Khánh Huyền</title>
+  <meta name="description" content="Care Trees là ứng dụng di động hỗ trợ nhắc nhở và quản lý quy trình chăm sóc cây cảnh hằng ngày với trải nghiệm nhẹ nhàng, thân thiện.">
+  <meta name="author" content="Khánh Huyền">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Care Trees App - Mobile App UI/UX | Khánh Huyền">
+  <meta property="og:description" content="Hồ sơ thiết kế UI/UX Care Trees - Ứng dụng chăm sóc cây cảnh cá nhân hóa.">
+  <meta property="og:image" content="img/care app.png">
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="gradient"></div>
+
+<div class="container">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><span class="logo-text">KH.</span></a>
+    </div>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link ">Trang chủ</a>
+      <a href="projects.html" class="nav-link active">Dự án</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+    </nav>
+
+    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
+    
+    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+  
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
+      <a href="projects.html" class="mobile-nav-link active">Dự án</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="case-hero">
+    <div class="container">
+      <div class="case-meta reveal">
+        <div>
+          <p class="case-breadcrumb">Hồ sơ dự án · Mobile App</p>
+          <h1 class="case-title">Care Trees App</h1>
+          <p class="case-subtitle">
+            Thiết kế trải nghiệm mobile thân thiện giúp người trồng cây dễ dàng theo dõi lịch tưới nước, ánh sáng và duy trì thói quen chăm sóc cây cảnh hằng ngày.
+          </p>
+          <div class="elogi-hero-actions" style="margin-top:20px;">
+            <a href="#details" class="btn-primary">Xem chi tiết dự án</a>
+            <a href="projects.html" class="btn-secondary">Quay lại danh mục</a>
+          </div>
+        </div>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <p class="case-stat-label">Loại dự án</p>
+            <p class="case-stat-value">Mobile App</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Vai trò</p>
+            <p class="case-stat-value">UI/UX Designer</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Công cụ</p>
+            <p class="case-stat-value">Figma</p>
+          </div>
+          <div class="case-stat">
+            <p class="case-stat-label">Trọng tâm</p>
+            <p class="case-stat-value">Habit-forming UX</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-hero-media reveal">
+        <img src="img/care app.png" alt="Care Trees mobile app preview" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" id="details">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header">
+          <p class="case-kicker">Bối cảnh &amp; Vấn đề</p>
+          <h2 class="case-heading">Chăm sóc cây cảnh rất dễ bị quên hoặc nhầm lẫn lịch trình.</h2>
+        </div>
+        <p class="elogi-lead">
+          Nhiều người yêu thích trồng cây trong nhà nhưng thường xuyên quên lịch tưới nước, bón phân hoặc nhầm lẫn nhu cầu chăm sóc giữa các giống cây khác nhau. Các ứng dụng quản lý tác vụ thông thường lại quá nặng nề và phức tạp.
+        </p>
+        <ul class="case-list elogi-list-large">
+          <li>Người dùng cần những lời nhắc nhở nhanh, trực quan thay vì cài đặt phức tạp.</li>
+          <li>Thông tin nhu cầu ánh sáng, lượng nước cần hiển thị dễ hiểu ngay từ cái nhìn đầu tiên.</li>
+          <li>Trải nghiệm ứng dụng cần tạo cảm giác thư thái, gần gũi với thiên nhiên và khích lệ người dùng.</li>
+        </ul>
+      </div>
+
+      <div class="case-card kid-highlight-card">
+        <p class="case-label">Phạm vi thiết kế</p>
+        <h3>Trải nghiệm quản lý cây trồng đơn giản &amp; thư giãn.</h3>
+        <ul class="case-list">
+          <li>Thiết kế luồng Onboarding khám phá giống cây và mục tiêu chăm sóc.</li>
+          <li>Màn hình Trang chủ với danh sách cây theo từng khu vực (phòng khách, ban công).</li>
+          <li>Thẻ thông tin cây với trạng thái sức khỏe và đếm ngược lần tưới kế tiếp.</li>
+          <li>Hệ thống thông báo nhắc nhở thông minh theo thời tiết và chu kỳ sinh trưởng.</li>
+          <li>Cẩm nang mẹo chăm sóc nhanh cho từng loại cây trong nhà.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section wann-soft-section">
+    <div class="container reveal">
+      <div class="case-section-header">
+        <p class="case-kicker">Đóng góp của mình</p>
+        <h2 class="case-heading">Các khía cạnh mình đã thực hiện trong dự án.</h2>
+      </div>
+
+      <div class="contribution-grid">
+        <article>
+          <span>01</span>
+          <h3>Nghiên cứu &amp; Luồng thao tác</h3>
+          <p>Xây dựng User Flow đơn giản hóa việc thêm cây mới và đánh dấu "Đã tưới" chỉ với 1 chạm nhanh gọn.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Hệ thống UI &amp; Tone thị giác</h3>
+          <p>Sử dụng tone màu xanh lá dịu mát kết hợp font chữ hiện đại, bo góc mềm mại tạo cảm giác thư giãn, nhẹ nhàng.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Prototype &amp; Handoff</h3>
+          <p>Tạo prototype tương tác các trạng thái thành công, nhắc nhở và chuẩn bị component tokens hoàn chỉnh cho dev.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ready-section reveal">
+    <div class="ready-box">
+      <p class="case-kicker">Nhìn lại dự án</p>
+      <h2>Tạo nên những trải nghiệm số mang lại niềm vui mỗi ngày.</h2>
+      <p>
+        Care Trees là dự án giúp mình rèn luyện tư duy thiết kế lấy con người làm trung tâm (Human-Centered Design), hướng tới việc tạo dựng thói quen tích cực qua giao diện di động.
+      </p>
+      <div class="ready-buttons">
+        <a href="projects.html" class="primary-btn">Khám phá các dự án khác</a>
+        <a href="contact.html" class="primary-btn">Trao đổi với mình</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer reveal" id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">
+          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="projects.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

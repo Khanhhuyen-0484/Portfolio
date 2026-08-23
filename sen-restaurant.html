@@ -3,33 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhà hàng Sen - Website Frontend | Khanh Huyen</title>
-  <meta name="description" content="Nhà hàng Sen là dự án website frontend cho nhà hàng, tập trung vào bố cục responsive, hình ảnh ẩm thực tinh tế và luồng đặt bàn rõ ràng.">
+  <title>Nhà hàng Sen - Website Frontend | Khánh Huyền</title>
+  <meta name="description" content="Nhà hàng Sen là dự án website frontend cho nhà hàng ẩm thực Việt, tập trung vào bố cục responsive, hình ảnh ẩm thực tinh tế và luồng đặt bàn rõ ràng.">
+  <meta name="author" content="Khánh Huyền">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Nhà hàng Sen - Website Frontend | Khánh Huyền">
+  <meta property="og:description" content="Website Nhà hàng Sen: Thiết kế UI/UX, Code Frontend Responsive và Deploy Live trên Vercel.">
+  <meta property="og:image" content="assets/images/sen/sen-home-real.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nhà hàng Sen - Website Frontend | Khánh Huyền">
+  <meta name="twitter:description" content="Website Nhà hàng Sen: Thiết kế UI/UX, Code Frontend Responsive và Deploy Live trên Vercel.">
+  <meta name="twitter:image" content="assets/images/sen/sen-home-real.png">
 
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
 <div class="container">
+  <!-- Header -->
   <header class="header">
-    <div class="logo"><a href="index.html"><span class="logo-text">KH.</span></a></div>
+    <div class="logo">
+      <a href="index.html"><span class="logo-text">KH.</span></a>
+    </div>
+
     <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
-      <a href="About.html" class="nav-link">Giới thiệu</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
       <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
     </nav>
-    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
-    <button class="hamburger" id="hamburger" aria-label="Mở menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+
+    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
+    
+    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
   </header>
+  
+  <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
-    <nav class="mobile-nav"><a href="index.html" class="mobile-nav-link">Trang chủ</a><a href="projects.html" class="mobile-nav-link">Dự án</a><a href="About.html" class="mobile-nav-link">Giới thiệu</a><a href="contact.html" class="mobile-nav-link">Liên hệ</a></nav>
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
+      <a href="projects.html" class="mobile-nav-link active">Dự án</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+    </nav>
   </div>
 </div>
 
@@ -37,19 +67,19 @@
   <section class="sen-hero">
     <div class="container sen-hero-grid">
       <div class="sen-hero-copy reveal">
-        <p class="case-breadcrumb">Hồ sơ dự án - Website Frontend</p>
+        <p class="case-breadcrumb">Hồ sơ dự án · Website Frontend</p>
         <h1 class="case-title">Nhà hàng Sen</h1>
-        <p class="case-subtitle">Website thực tế cho Nhà hàng Sen, được mình thiết kế giao diện, code frontend responsive và deploy live với không khí ẩm thực Việt ấm áp, rõ ràng và dễ thao tác.</p>
+        <p class="case-subtitle">Website thực tế cho Nhà hàng Sen, được mình thiết kế giao diện, code frontend responsive và deploy live với không khí ẩm thực Việt ấm áp, trang nhã và thuận tiện đặt bàn.</p>
         <div class="elogi-hero-actions">
           <a href="https://nhahangsen.vercel.app/" class="btn-primary" target="_blank" rel="noopener noreferrer">Xem website live</a>
           <a href="#details" class="btn-secondary">Xem chi tiết</a>
           <a href="projects.html" class="btn-secondary">Quay lại dự án</a>
         </div>
         <div class="elogi-meta-grid">
-          <div class="case-stat"><p class="case-stat-label">Loại dự án</p><p class="case-stat-value">Website nhà hàng</p></div>
+          <div class="case-stat"><p class="case-stat-label">Loại dự án</p><p class="case-stat-value">Website Ẩm thực</p></div>
           <div class="case-stat"><p class="case-stat-label">Vai trò</p><p class="case-stat-value">Thiết kế · Code · Deploy</p></div>
-          <div class="case-stat"><p class="case-stat-label">Trọng tâm</p><p class="case-stat-value">UI responsive</p></div>
-          <div class="case-stat"><p class="case-stat-label">Nền tảng</p><p class="case-stat-value">Vercel</p></div>
+          <div class="case-stat"><p class="case-stat-label">Trọng tâm</p><p class="case-stat-value">UI/UX &amp; Responsive</p></div>
+          <div class="case-stat"><p class="case-stat-label">Nền tảng</p><p class="case-stat-value">Vercel Live</p></div>
         </div>
       </div>
       <div class="sen-hero-media reveal">
@@ -72,9 +102,15 @@
         <p class="elogi-lead">Nhà hàng Sen thể hiện hình ảnh thương hiệu ẩm thực qua một website thực tế đã deploy live. Dự án tập trung vào ấn tượng đầu tiên, khám phá thực đơn, không gian nhà hàng, điều hướng rõ ràng và trải nghiệm responsive trên nhiều thiết bị.</p>
       </div>
       <div class="case-card sen-highlight-card">
-        <p class="case-label">Phạm vi</p>
+        <p class="case-label">Phạm vi thực hiện</p>
         <h3>Thiết kế, code và deploy website nhà hàng.</h3>
-        <ul class="case-list"><li>Trải nghiệm landing page dành riêng cho nhà hàng.</li><li>Hero section tạo không khí thị giác rõ nét.</li><li>Các phần menu và nội dung được thiết kế để xem nhanh.</li><li>Bố cục responsive cho cả desktop và mobile.</li><li>Deploy website live trên Vercel.</li></ul>
+        <ul class="case-list">
+          <li>Trải nghiệm landing page trang nhã dành riêng cho ẩm thực truyền thống.</li>
+          <li>Hero section tạo không khí thị giác đậm đà bản sắc Việt.</li>
+          <li>Các phần menu và hình ảnh món ăn được tối ưu để duyệt nhanh trên điện thoại.</li>
+          <li>Bố cục responsive cho cả desktop, tablet và mobile.</li>
+          <li>Deploy website live trên nền tảng Vercel.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -84,11 +120,11 @@
       <div class="case-section-header"><p class="case-kicker">Hình ảnh website</p><h2 class="case-heading">Một vài màn hình từ website Nhà hàng Sen.</h2></div>
       <div class="sen-screen-gallery">
         <figure class="sen-screen-card sen-screen-wide">
-          <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen">
+          <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen" loading="lazy">
           <figcaption><span>Trang chủ</span><strong>Hero section, nhận diện thương hiệu và CTA tư vấn</strong></figcaption>
         </figure>
         <figure class="sen-screen-card">
-          <img src="assets/images/sen/sen-space-real.png" alt="Ảnh chụp phần không gian website Nhà hàng Sen">
+          <img src="assets/images/sen/sen-space-real.png" alt="Ảnh chụp phần không gian website Nhà hàng Sen" loading="lazy">
           <figcaption><span>Không gian</span><strong>Gallery không gian, tư vấn mâm tiệc và sự kiện</strong></figcaption>
         </figure>
       </div>
@@ -99,9 +135,9 @@
     <div class="container reveal">
       <div class="case-section-header"><p class="case-kicker">Đóng góp của mình</p><h2 class="case-heading">Mình thực hiện trọn quy trình từ thiết kế đến triển khai.</h2></div>
       <div class="contribution-grid">
-        <article><span>01</span><h3>Bố cục responsive</h3><p>Sắp xếp các section để trang luôn rõ ràng và dễ đọc trên desktop, tablet và mobile.</p></article>
-        <article><span>02</span><h3>Phân cấp thị giác</h3><p>Dùng khoảng cách, typography và tương phản để dẫn người xem từ thông điệp hero đến menu và thông tin nhà hàng.</p></article>
-        <article><span>03</span><h3>Deploy live</h3><p>Hoàn thiện và đưa website lên Vercel để có thể truy cập, chia sẻ và kiểm tra như một dự án thực tế.</p></article>
+        <article><span>01</span><h3>Bố cục Responsive</h3><p>Sắp xếp các section để trang luôn rõ ràng và dễ đọc trên desktop, tablet và mobile.</p></article>
+        <article><span>02</span><h3>Phân cấp thị giác</h3><p>Dùng khoảng cách, typography và tương phản màu sắc để dẫn dắt người xem từ thông điệp hero đến menu và đặt bàn.</p></article>
+        <article><span>03</span><h3>Deploy Live</h3><p>Hoàn thiện và đưa website lên Vercel để có thể truy cập, chia sẻ và kiểm tra như một dự án thực tế.</p></article>
       </div>
     </div>
   </section>
@@ -109,8 +145,13 @@
   <section class="case-section">
     <div class="container case-grid-2 reveal">
       <div>
-        <div class="case-section-header"><p class="case-kicker">Tư duy frontend</p><h2 class="case-heading">Quyết định thiết kế gắn với triển khai thực tế.</h2></div>
-        <ul class="case-list elogi-list-large"><li>Xây dựng quanh các section rõ ràng thay vì cấu trúc nhiều trang nặng nề.</li><li>Ưu tiên khoảng cách responsive để website dễ xem trên màn hình nhỏ.</li><li>Cân bằng không khí thương hiệu với điều hướng thực tế và nội dung dễ đọc.</li><li>Dùng URL Vercel live để dự án dễ kiểm tra và chia sẻ.</li></ul>
+        <div class="case-section-header"><p class="case-kicker">Tư duy Frontend</p><h2 class="case-heading">Quyết định thiết kế gắn liền với triển khai thực tế.</h2></div>
+        <ul class="case-list elogi-list-large">
+          <li>Xây dựng quanh các section rõ ràng thay vì cấu trúc nhiều trang nặng nề.</li>
+          <li>Ưu tiên khoảng cách responsive để website dễ xem trên màn hình nhỏ.</li>
+          <li>Cân bằng không khí thương hiệu với điều hướng thực tế và nội dung dễ đọc.</li>
+          <li>Dùng URL Vercel live để dự án dễ kiểm tra và chia sẻ với khách hàng.</li>
+        </ul>
       </div>
       <div class="sen-visual-panel">
         <div class="sen-color-row"><span style="background:#173c2f"></span><span style="background:#c7a45b"></span><span style="background:#f4efe6"></span><span style="background:#ffffff"></span></div>
@@ -120,11 +161,49 @@
   </section>
 
   <section class="ready-section sen-reflection">
-    <div class="ready-box reveal"><p class="case-kicker">Nhìn lại dự án</p><h2>Một dự án frontend giúp portfolio UI/UX của mình đa dạng hơn.</h2><p>Dự án này thể hiện cách mình kết nối thiết kế UI/UX với code frontend, cấu trúc responsive và deploy live cho một website nhà hàng thực tế.</p><div class="ready-buttons"><a href="https://nhahangsen.vercel.app/" class="primary-btn" target="_blank" rel="noopener noreferrer">Xem website live</a><a href="projects.html" class="primary-btn">Quay lại dự án</a></div></div>
+    <div class="ready-box reveal">
+      <p class="case-kicker">Nhìn lại dự án</p>
+      <h2>Một dự án frontend giúp portfolio của mình thêm phong phú.</h2>
+      <p>Dự án này thể hiện cách mình kết nối thiết kế UI/UX với code frontend, cấu trúc responsive và deploy live cho một website nhà hàng thực tế.</p>
+      <div class="ready-buttons">
+        <a href="https://nhahangsen.vercel.app/" class="primary-btn" target="_blank" rel="noopener noreferrer">Xem website live</a>
+        <a href="projects.html" class="primary-btn">Quay lại danh mục</a>
+      </div>
+    </div>
   </section>
 </main>
 
-<footer class="footer"><div class="container"><div class="footer-content"><div class="footer-brand"><h2 class="footer-logo">Khanh Huyen</h2><p class="footer-tagline">Thiết kế trải nghiệm số rõ ràng, chỉn chu cho mobile app, website và sản phẩm sáng tạo.</p></div><div class="footer-links"><div class="footer-column"><h4>Liên kết nhanh</h4><ul><li><a href="index.html">Trang chủ</a></li><li><a href="projects.html">Dự án</a></li><li><a href="About.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul></div></div></div><div class="footer-bottom"><p class="copyright">(c) 2026 Khanh Huyen. Tất cả quyền được bảo lưu.</p></div></div></footer>
+<footer class="footer reveal" id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">
+          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="projects.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
+      </p>
+    </div>
+  </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>

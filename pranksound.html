@@ -1,49 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prank Sound - Mobile Entertainment App | Khanh Huyen</title>
-  <meta name="description" content="Prank Sound is a playful mobile entertainment app with funny prank sound effects and a comic-inspired interface.">
+  <title>Prank Sound - Mobile Entertainment App | Khánh Huyền</title>
+  <meta name="description" content="Prank Sound là ứng dụng âm thanh giải trí vui nhộn với giao diện phong cách comic nổi bật, hiệu ứng âm thanh phong phú và tương tác tức thì.">
+  <meta name="author" content="Khánh Huyền">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Prank Sound - Mobile Entertainment App | Khánh Huyền">
+  <meta property="og:description" content="Hồ sơ thiết kế UI/UX Prank Sound - Ứng dụng âm thanh giải trí mobile vui nhộn.">
+  <meta property="og:image" content="assets/images/pranksound/pranksound-hero.png">
 
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
 <div class="container">
+  <!-- Header -->
   <header class="header">
     <div class="logo">
       <a href="index.html"><span class="logo-text">KH.</span></a>
     </div>
 
     <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="projects.html" class="nav-link active">Projects</a>
-      <a href="About.html" class="nav-link">About</a>
-      <a href="contact.html" class="nav-link mobile-only">Contact</a>
+      <a href="index.html" class="nav-link ">Trang chủ</a>
+      <a href="projects.html" class="nav-link active">Dự án</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only">Contact</a>
-
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
+    
+    <button class="hamburger" id="hamburger" aria-label="Mở menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-
+  
+  <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Home</a>
-      <a href="projects.html" class="mobile-nav-link">Projects</a>
-      <a href="About.html" class="mobile-nav-link">About</a>
-      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
+      <a href="projects.html" class="mobile-nav-link active">Dự án</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
     </nav>
   </div>
 </div>
@@ -52,272 +61,123 @@
   <section class="prank-hero">
     <div class="container">
       <div class="prank-hero-copy reveal">
-        <p class="case-breadcrumb">Case study - Mobile Entertainment App</p>
+        <p class="case-breadcrumb">Hồ sơ dự án · Mobile Entertainment App</p>
         <h1 class="case-title">Prank Sound</h1>
-        <p class="case-subtitle">A playful mobile app designed for funny sound effects and quick prank interactions.</p>
+        <p class="case-subtitle">Ứng dụng di động giải trí vui nhộn được thiết kế cho các hiệu ứng âm thanh troll bạn bè với tốc độ phản hồi tức thì và hình ảnh bắt mắt.</p>
 
         <div class="elogi-hero-actions">
-          <a href="#screens" class="btn-primary">View Screens</a>
-          <a href="projects.html" class="btn-secondary">Back to Projects</a>
+          <a href="#details" class="btn-primary">Xem chi tiết dự án</a>
+          <a href="projects.html" class="btn-secondary">Quay lại dự án</a>
         </div>
 
         <div class="prank-badges" aria-label="Project tags">
           <span>Mobile App</span>
-          <span>Entertainment</span>
-          <span>UI/UX Design</span>
+          <span>Giải trí</span>
+          <span>Thiết kế UI/UX</span>
           <span>Figma</span>
         </div>
       </div>
 
       <div class="prank-hero-media reveal">
-        <img src="assets/images/pranksound/pranksound-hero.png" alt="Prank Sound mobile app hero mockup">
+        <img src="assets/images/pranksound/pranksound-hero.png" alt="Prank Sound mobile app hero mockup" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section class="case-section">
+  <section class="case-section" id="details">
     <div class="container case-grid-2 reveal">
       <div>
         <div class="case-section-header">
-          <p class="case-kicker">Project overview</p>
-          <h2 class="case-heading">A playful prank sound app for quick entertainment.</h2>
+          <p class="case-kicker">Tổng quan dự án</p>
+          <h2 class="case-heading">Ứng dụng âm thanh giải trí mang lại niềm vui nhanh chóng.</h2>
         </div>
         <p class="prank-lead">
-          Prank Sound is a mobile entertainment app that allows users to browse and play different prank sounds through a simple and engaging interface. The app focuses on fun interaction, colorful UI, and quick sound access.
+          Prank Sound cho phép người dùng duyệt và phát hàng chục hiệu ứng âm thanh trêu đùa khác nhau (tiếng còi hơi, kéo cắt tóc, tiếng cười, âm thanh động vật...) thông qua giao diện dạng thẻ bài đầy màu sắc và bắt mắt.
         </p>
       </div>
 
       <div class="case-card prank-highlight-card">
-        <p class="case-label">Project details</p>
-        <h3>Fast, funny and instantly clear.</h3>
+        <p class="case-label">Chi tiết dự án</p>
+        <h3>Nhanh, hài hước và dễ dùng ngay tức thì.</h3>
         <ul class="case-list">
-          <li>Platform: Mobile App</li>
-          <li>Category: Entertainment</li>
-          <li>Role: UI/UX Designer</li>
-          <li>Tool: Figma</li>
+          <li>Nền tảng: Mobile App (iOS / Android)</li>
+          <li>Thể loại: Ứng dụng giải trí</li>
+          <li>Vai trò: UI/UX Designer</li>
+          <li>Công cụ: Figma</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="case-section prank-soft-section">
-    <div class="container case-grid-2 reveal">
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Problem</p>
-          <h2 class="case-heading">Prank sounds need to be fast, simple and fun to access.</h2>
-        </div>
-        <ul class="case-list prank-list-large">
-          <li>Users want to access prank sounds quickly without a complicated flow.</li>
-          <li>Entertainment apps need to feel playful, simple, and instantly understandable.</li>
-          <li>If the interface is too crowded or unclear, users may lose interest quickly.</li>
-          <li>The challenge was to organize multiple sound categories while keeping the UI fun and easy to use.</li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Goal</p>
-          <h2 class="case-heading">Create a playful interface that makes sound actions obvious.</h2>
-        </div>
-        <ul class="case-list prank-list-large">
-          <li>Create a playful and eye-catching mobile UI.</li>
-          <li>Help users quickly find and play prank sounds.</li>
-          <li>Organize sounds into clear categories.</li>
-          <li>Make key actions obvious and easy to tap.</li>
-          <li>Build a consistent and fun visual identity.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section">
+  <section class="case-section wann-soft-section">
     <div class="container reveal">
       <div class="case-section-header">
-        <p class="case-kicker">Design process</p>
-        <h2 class="case-heading">A simple flow from idea to prototype.</h2>
+        <p class="case-kicker">Đóng góp của mình</p>
+        <h2 class="case-heading">Các điểm chạm thiết kế chính trong dự án.</h2>
       </div>
 
-      <div class="prank-process-grid">
-        <article class="prank-step">
+      <div class="contribution-grid">
+        <article>
           <span>01</span>
-          <h3>Research</h3>
-          <p>Understand how users expect a casual entertainment app to behave.</p>
+          <h3>Bảng âm thanh dạng thẻ bài</h3>
+          <p>Thiết kế các ô âm thanh với icon sinh động, bo góc lớn, có phản hồi màu sắc khi chạm để tạo cảm giác nhấn chân thực.</p>
         </article>
-        <article class="prank-step">
+        <article>
           <span>02</span>
-          <h3>User Flow</h3>
-          <p>Map the fastest path from opening the app to playing a prank sound.</p>
+          <h3>Chế độ Hẹn giờ (Timer Prank)</h3>
+          <p>Tạo luồng hẹn giờ đếm ngược kèm vòng lặp âm thanh giúp người dùng dễ dàng đặt bẫy âm thanh troll bạn bè.</p>
         </article>
-        <article class="prank-step">
+        <article>
           <span>03</span>
-          <h3>Wireframe</h3>
-          <p>Plan category screens, sound player layouts and popup interactions.</p>
-        </article>
-        <article class="prank-step">
-          <span>04</span>
-          <h3>UI Design</h3>
-          <p>Apply bold colors, rounded UI elements and playful visual details.</p>
-        </article>
-        <article class="prank-step">
-          <span>05</span>
-          <h3>Prototype</h3>
-          <p>Connect key screens into a quick, tap-friendly mobile experience.</p>
+          <h3>Phong cách Comic vui nhộn</h3>
+          <p>Sử dụng màu sắc tương phản cao, đổ bóng đậm chất truyện tranh comic tạo không khí sảng khoái, tràn đầy năng lượng.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="case-section prank-soft-section">
-    <div class="container reveal">
-      <div class="case-section-header">
-        <p class="case-kicker">Main features</p>
-        <h2 class="case-heading">Feature blocks for the core app experience.</h2>
-      </div>
-
-      <div class="prank-feature-grid">
-        <article class="prank-feature-card">
-          <h3>Splash Screen</h3>
-          <p>Introduces the app with a bold and energetic first impression.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Welcome Screen</h3>
-          <p>Creates a friendly and playful introduction before users start exploring sounds.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Home Screen</h3>
-          <p>Displays sound categories clearly so users can quickly choose the prank they want.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Sound Categories</h3>
-          <p>Organizes different sound types such as Hair Clipper, Hair Cut, Meme, Sneeze, Frog, Fart, Bomb, Taser, and Electric Razor.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Sound Player</h3>
-          <p>Lets users play, stop, and loop sounds with quick controls and easy interaction.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Rate Popup</h3>
-          <p>Encourages user feedback through a fun and visually friendly rating interface.</p>
-        </article>
-        <article class="prank-feature-card">
-          <h3>Settings / Additional Screens</h3>
-          <p>Supports supporting screens when users need more control over the app experience.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section">
-    <div class="container case-grid-2 reveal">
-      <div>
-        <div class="case-section-header">
-          <p class="case-kicker">Visual design</p>
-          <h2 class="case-heading">Bright, playful and comic-inspired.</h2>
-        </div>
-        <ul class="case-list prank-list-large">
-          <li>Bright and playful color palette, especially orange, yellow, cream, and white.</li>
-          <li>Rounded buttons and cards for a soft, friendly look.</li>
-          <li>Bold typography for titles and playful UI elements.</li>
-          <li>Comic-inspired visuals that match the fun entertainment theme.</li>
-          <li>Clean spacing and clear hierarchy for easy interaction.</li>
-        </ul>
-      </div>
-
-      <div class="prank-visual-panel">
-        <span class="prank-pop-label">LOL!</span>
-        <span class="prank-pop-label second">BOOM!</span>
-        <div class="prank-color-row">
-          <span style="background:#ff7a18"></span>
-          <span style="background:#ffd83e"></span>
-          <span style="background:#fff6d7"></span>
-          <span style="background:#ffffff"></span>
-        </div>
-        <div class="prank-note-card">
-          <h3>Visual tone</h3>
-          <p>The interface should feel humorous and energetic while staying easy to scan and tap.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="case-section prank-soft-section">
-    <div class="container reveal">
-      <div class="case-section-header">
-        <p class="case-kicker">Final screens</p>
-        <h2 class="case-heading">A gallery for the main app screens.</h2>
-      </div>
-
-      <div class="prank-screen-grid" id="screens">
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-splash.png" alt="Prank Sound splash screen">
-          <h3>Splash / Loading</h3>
-        </article>
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-welcome.png" alt="Prank Sound welcome back screen">
-          <h3>Welcome Back</h3>
-        </article>
-        <article class="prank-screen-card is-featured">
-          <img src="assets/images/pranksound/pranksound-home.png" alt="Prank Sound home category screen">
-          <h3>Home Category</h3>
-        </article>
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-hairclipper.png" alt="Prank Sound hair clipper screen">
-          <h3>Hair Clipper</h3>
-        </article>
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-frog.png" alt="Prank Sound frog sound player">
-          <h3>Frog Sound Player</h3>
-        </article>
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-razor.png" alt="Prank Sound electric razor player">
-          <h3>Electric Razor</h3>
-        </article>
-        <article class="prank-screen-card">
-          <img src="assets/images/pranksound/pranksound-rate-popup.png" alt="Prank Sound rate popup">
-          <h3>Rate Popup</h3>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="ready-section prank-reflection">
-    <div class="ready-box reveal">
-      <p class="case-kicker">Reflection</p>
-      <h2>Designing a playful mobile entertainment experience.</h2>
+  <section class="ready-section reveal">
+    <div class="ready-box">
+      <p class="case-kicker">Nhìn lại dự án</p>
+      <h2>Thiết kế hướng tới trải nghiệm tương tác nhanh và giàu cảm xúc.</h2>
       <p>
-        Through this project, I explored how to design a playful mobile entertainment app that feels simple, fun, and easy to interact with. The project helped me improve my skills in organizing content, designing engaging interfaces, and building a consistent visual style for a casual mobile experience.
+        Prank Sound giúp mình thử sức với phong cách thiết kế Playful UI, chú trọng vào micro-interactions và thời gian phản hồi siêu nhanh cho người dùng.
       </p>
       <div class="ready-buttons">
-        <a href="projects.html" class="primary-btn">Back to projects</a>
+        <a href="projects.html" class="primary-btn">Khám phá các dự án khác</a>
+        <a href="contact.html" class="primary-btn">Trao đổi với mình</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer reveal" id="contact">
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <h2 class="footer-logo">Khanh Huyen</h2>
-        <p class="footer-tagline">Crafting digital experiences for next-generation SaaS brands and creative startups.</p>
+        <h2 class="footer-logo">Khánh Huyền</h2>
+        <p class="footer-tagline">
+          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
+        </p>
       </div>
 
       <div class="footer-links">
         <div class="footer-column">
-          <h4>Quick Links</h4>
+          <h4>Liên kết nhanh</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="projects.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="copyright">(c) 2026 Khanh Huyen. All rights reserved.</p>
+      <p class="copyright">
+        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
+      </p>
     </div>
   </div>
 </footer>
