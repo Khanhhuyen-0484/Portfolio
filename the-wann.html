@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wann - Website Frontend | Khanh Huyen</title>
+  <meta name="description" content="The Wann là dự án website frontend cho dining & lounge, tập trung vào storytelling nightlife, xem menu và luồng đặt bàn.">
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="gradient"></div>
+
+<div class="container">
+  <header class="header">
+    <div class="logo"><a href="index.html"><span class="logo-text">KH.</span></a></div>
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="projects.html" class="nav-link active">Dự án</a>
+      <a href="About.html" class="nav-link">Giới thiệu</a>
+      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+    </nav>
+    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
+    <button class="hamburger" id="hamburger" aria-label="Mở menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+  </header>
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav"><a href="index.html" class="mobile-nav-link">Trang chủ</a><a href="projects.html" class="mobile-nav-link">Dự án</a><a href="About.html" class="mobile-nav-link">Giới thiệu</a><a href="contact.html" class="mobile-nav-link">Liên hệ</a></nav>
+  </div>
+</div>
+
+<main>
+  <section class="wann-hero">
+    <div class="container wann-hero-grid">
+      <div class="wann-hero-copy reveal">
+        <p class="case-breadcrumb">Hồ sơ dự án - Website Frontend</p>
+        <h1 class="case-title">The Wann</h1>
+        <p class="case-subtitle">The Wann là một website thực tế cho dining, lounge và nightlife. Mình phụ trách trọn dự án từ thiết kế giao diện, code frontend responsive đến deploy website live.</p>
+        <div class="elogi-hero-actions">
+          <a href="https://thewann.com/" class="btn-primary" target="_blank" rel="noopener noreferrer">Xem website live</a>
+          <a href="#details" class="btn-secondary">Xem chi tiết</a>
+          <a href="projects.html" class="btn-secondary">Quay lại dự án</a>
+        </div>
+        <div class="elogi-meta-grid">
+          <div class="case-stat"><p class="case-stat-label">Loại dự án</p><p class="case-stat-value">Website dining & lounge</p></div>
+          <div class="case-stat"><p class="case-stat-label">Vai trò</p><p class="case-stat-value">Thiết kế · Code · Deploy</p></div>
+          <div class="case-stat"><p class="case-stat-label">Trọng tâm</p><p class="case-stat-value">UI/UX & Frontend</p></div>
+          <div class="case-stat"><p class="case-stat-label">Tông thương hiệu</p><p class="case-stat-value">Nightlife</p></div>
+        </div>
+      </div>
+      <div class="wann-hero-media reveal">
+        <div class="wann-device-hero">
+          <img src="assets/images/thewann/thewann-device-mockup.png" alt="Mockup thiết bị website The Wann">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" id="details">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header"><p class="case-kicker">Tổng quan dự án</p><h2 class="case-heading">Website nightlife được xây dựng quanh không khí thương hiệu, sự kiện và mục tiêu đặt bàn.</h2></div>
+        <p class="elogi-lead">The Wann mang đến trải nghiệm dining & lounge cao cấp tại Quận 1. Trong dự án này, mình đảm nhận toàn bộ quá trình từ định hướng giao diện, xây dựng layout responsive, code frontend, tối ưu nội dung hiển thị đến deploy website live để người dùng có thể truy cập thực tế.</p>
+      </div>
+      <div class="case-card wann-highlight-card">
+        <p class="case-label">Phạm vi</p>
+        <h3>Thiết kế, code và deploy website hoàn chỉnh.</h3>
+        <ul class="case-list"><li>Thiết kế giao diện website theo tinh thần dining, lounge và nightlife.</li><li>Code frontend responsive cho desktop và mobile.</li><li>Xây dựng nội dung sự kiện, menu, thông tin địa điểm và CTA đặt bàn.</li><li>Tối ưu bố cục để người xem dễ khám phá và thao tác.</li><li>Deploy website live để có thể chia sẻ và kiểm thử thực tế.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section wann-screens-section">
+    <div class="container reveal">
+      <div class="case-section-header"><p class="case-kicker">Hình ảnh website</p><h2 class="case-heading">Một vài góc nhìn từ website live.</h2></div>
+      <div class="wann-screen-gallery wann-screen-gallery-real">
+        <figure class="wann-screen-card wann-screen-wide">
+          <img src="assets/images/thewann/thewann-home-real.png" alt="Ảnh chụp trang chủ website The Wann">
+          <figcaption><span>Trang chủ</span><strong>Hero section, CTA đặt bàn và thông tin địa điểm</strong></figcaption>
+        </figure>
+        <figure class="wann-screen-card">
+          <img src="assets/images/thewann/thewann-menu-real.png" alt="Ảnh chụp trang menu website The Wann">
+          <figcaption><span>Menu</span><strong>Danh mục món, combo và thao tác chọn món</strong></figcaption>
+        </figure>
+        <figure class="wann-screen-card">
+          <img src="assets/images/thewann/thewann-blog-real.png" alt="Ảnh chụp trang blog website The Wann">
+          <figcaption><span>Blog</span><strong>Tin tức, sự kiện và nội dung truyền thông</strong></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section wann-soft-section">
+    <div class="container reveal">
+      <div class="case-section-header"><p class="case-kicker">Đóng góp của mình</p><h2 class="case-heading">Mình thực hiện trọn quy trình từ thiết kế đến triển khai.</h2></div>
+      <div class="contribution-grid">
+        <article><span>01</span><h3>Thiết kế UI/UX</h3><p>Sắp xếp luồng nội dung, hero, menu, sự kiện và đặt bàn để website vừa có không khí thương hiệu vừa dễ sử dụng.</p></article>
+        <article><span>02</span><h3>Code frontend</h3><p>Xây dựng giao diện responsive, đảm bảo bố cục, typography, màu sắc và các trạng thái hiển thị ổn trên nhiều kích thước màn hình.</p></article>
+        <article><span>03</span><h3>Deploy website</h3><p>Hoàn thiện và triển khai website live để dự án có thể truy cập công khai, dễ chia sẻ và sử dụng thực tế.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container case-grid-2 reveal">
+      <div>
+        <div class="case-section-header"><p class="case-kicker">Tư duy frontend</p><h2 class="case-heading">Trải nghiệm thương hiệu nổi bật nhưng vẫn cần điều hướng thực tế.</h2></div>
+        <ul class="case-list elogi-list-large"><li>Dùng các section tương phản cao để phù hợp năng lượng dining và nightlife.</li><li>Ưu tiên khám phá sự kiện và menu cho khách đang lên kế hoạch đi chơi buổi tối.</li><li>Giữ đặt bàn là hành động chuyển đổi chính, luôn dễ nhìn thấy.</li><li>Sắp xếp footer để dễ tìm địa điểm, giờ mở cửa và hotline.</li></ul>
+      </div>
+      <div class="wann-visual-panel">
+        <div class="wann-color-row"><span style="background:#090716"></span><span style="background:#7c3aed"></span><span style="background:#f43f5e"></span><span style="background:#f8fafc"></span></div>
+        <div class="wann-ui-card"><span>Dining · Lounge · Nightlife</span><h3>Năng lượng, cao cấp và tập trung vào hành động</h3><p>Định hướng giao diện hỗ trợ thương hiệu nightlife giàu năng lượng, đồng thời giữ thao tác xem menu và đặt bàn rõ ràng.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ready-section wann-reflection">
+    <div class="ready-box reveal"><p class="case-kicker">Nhìn lại dự án</p><h2>Một dự án frontend có màu sắc thương hiệu mạnh hơn.</h2><p>Dự án này là một website thực tế trong portfolio của mình: mình tự thiết kế, code và deploy live, đồng thời xử lý storytelling sự kiện, bố cục responsive và luồng đặt bàn rõ ràng.</p><div class="ready-buttons"><a href="https://thewann.com/" class="primary-btn" target="_blank" rel="noopener noreferrer">Xem website live</a><a href="projects.html" class="primary-btn">Quay lại dự án</a></div></div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-content"><div class="footer-brand"><h2 class="footer-logo">Khanh Huyen</h2><p class="footer-tagline">Thiết kế trải nghiệm số rõ ràng, chỉn chu cho mobile app, website và sản phẩm sáng tạo.</p></div><div class="footer-links"><div class="footer-column"><h4>Liên kết nhanh</h4><ul><li><a href="index.html">Trang chủ</a></li><li><a href="projects.html">Dự án</a></li><li><a href="About.html">Giới thiệu</a></li><li><a href="contact.html">Liên hệ</a></li></ul></div></div></div><div class="footer-bottom"><p class="copyright">(c) 2026 Khanh Huyen. Tất cả quyền được bảo lưu.</p></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
