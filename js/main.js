@@ -1,4 +1,8 @@
-// Mobile Navigation
+// ============================================
+// Modern Linear & Aurora Interactive Scripts
+// ============================================
+
+// 1. Mobile Navigation Drawer
 (function() {
   const hamburger = document.getElementById('hamburger');
   const mobileOverlay = document.getElementById('mobile-overlay');
@@ -7,34 +11,21 @@
   
   if (hamburger) {
     hamburger.addEventListener('click', function() {
-      // Toggle hamburger animation
       this.classList.toggle('active');
-      
-      // Toggle overlay
-      if (mobileOverlay) {
-        mobileOverlay.classList.toggle('active');
-      }
-      
-      // Toggle drawer
-      if (mobileDrawer) {
-        mobileDrawer.classList.toggle('active');
-      }
-      
-      // Toggle body scroll
+      if (mobileOverlay) mobileOverlay.classList.toggle('active');
+      if (mobileDrawer) mobileDrawer.classList.toggle('active');
       document.body.classList.toggle('nav-open');
     });
     
-    // Close menu when clicking overlay
     if (mobileOverlay) {
       mobileOverlay.addEventListener('click', function() {
         hamburger.classList.remove('active');
         this.classList.remove('active');
-        mobileDrawer.classList.remove('active');
+        if (mobileDrawer) mobileDrawer.classList.remove('active');
         document.body.classList.remove('nav-open');
       });
     }
     
-    // Close menu when clicking a link
     mobileLinks.forEach(link => {
       link.addEventListener('click', function() {
         hamburger.classList.remove('active');
@@ -46,32 +37,77 @@
   }
 })();
 
-// Basic scroll reveal using Intersection Observer
+// 2. Linear-Style Cursor Spotlight Tracker
+(function() {
+  const spotlightSelector = [
+    '.project-card',
+    '.process-card',
+    '.focus-card',
+    '.frontend-card',
+    '.snapshot-grid article',
+    '.about-highlight-item',
+    '.contact-card',
+    '.skill-category',
+    '.contribution-grid article',
+    '.wann-highlight-card',
+    '.sen-highlight-card',
+    '.kid-highlight-card',
+    '.ai-highlight-card',
+    '.ultra-highlight-card',
+    '.elogi-highlight-card',
+    '.prank-highlight-card',
+    '.kid-process article',
+    '.ai-screen-card',
+    '.ultra-screen-card',
+    '.home-profile-card',
+    '.ready-box'
+  ].join(', ');
+
+  const updateSpotlight = () => {
+    const cards = document.querySelectorAll(spotlightSelector);
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateSpotlight);
+  } else {
+    updateSpotlight();
+  }
+})();
+
+// 3. Scroll Reveal using Intersection Observer
 (function () {
   const revealEls = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window) || revealEls.length === 0) {
     revealEls.forEach((el) => el.classList.add('reveal-visible'));
-    return;
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -30px 0px',
+      }
+    );
+
+    revealEls.forEach((el) => observer.observe(el));
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15,
-      rootMargin: '0px 0px -40px 0px',
-    }
-  );
-
-  revealEls.forEach((el) => observer.observe(el));
-
-  // Project filters
+  // 4. Project Filter Chips with Smooth Transitions
   const filterButtons = document.querySelectorAll('.filter-chip');
   const projectCards = document.querySelectorAll('#projects-grid .project-card');
 
@@ -90,7 +126,7 @@
           if (card.classList.contains('is-hidden')) {
             card.style.display = 'none';
           }
-        }, 240);
+        }, 220);
       }
     };
 
@@ -114,14 +150,15 @@
     applyFilter('all');
   }
 
-  // Lightweight fake submit for contact form
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      form.reset();
-      alert('Cảm ơn bạn đã chia sẻ dự án! Mình sẽ phản hồi sớm nhất có thể.');
-    });
+  // 5. Header Scroll Glass Blur Depth
+  const header = document.querySelector('.header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    }, { passive: true });
   }
 })();
-
