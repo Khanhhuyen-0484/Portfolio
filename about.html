@@ -3,308 +3,274 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giới thiệu | Khánh Huyền</title>
-  <meta name="description" content="Giới thiệu Khánh Huyền - UI/UX Designer học ngành Kỹ thuật phần mềm, có khả năng thiết kế UI/UX, code frontend và deploy website live.">
+  <title>Giới thiệu · Khánh Huyền | UI/UX Designer &amp; Frontend</title>
+  <meta name="description" content="Khánh Huyền - UI/UX Designer có nền tảng Kỹ thuật phần mềm, chuyên thiết kế mobile app, website responsive và triển khai sản phẩm thực tế.">
+  
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khanhhuyen-portfolio.vercel.app/about.html">
+  <meta property="og:title" content="Giới thiệu · Khánh Huyền | UI/UX Designer &amp; Frontend">
+  <meta property="og:description" content="Khám phá hành trình, kỹ năng và quy trình thiết kế giao diện, code frontend của Khánh Huyền.">
+  <meta property="og:image" content="https://khanhhuyen-portfolio.vercel.app/img/about-portrait.png">
 
-  <link rel="stylesheet" href="css/home.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Giới thiệu · Khánh Huyền | UI/UX Designer &amp; Frontend">
+  <meta property="twitter:description" content="Khám phá hành trình, kỹ năng và quy trình thiết kế giao diện, code frontend của Khánh Huyền.">
+  <meta property="twitter:image" content="https://khanhhuyen-portfolio.vercel.app/img/about-portrait.png">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Passions+Conflict&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-
 <body>
-
-<div class="gradient"></div>
-
-<div class="container">
+  <div class="gradient"></div>
 
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-text">KH.</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
+    <nav class="nav">
       <a href="index.html" class="nav-link">Trang chủ</a>
-      <a href="index.html#work" class="nav-link">Dự án</a>
-      <a href="About.html" class="nav-link active">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="projects.html" class="nav-link">Dự án</a>
+      <a href="about.html" class="nav-link active">Giới thiệu</a>
+      <a href="contact.html" class="nav-link">Liên hệ</a>
     </nav>
 
     <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
+
   <!-- Mobile Navigation Overlay -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
       <a href="index.html" class="mobile-nav-link">Trang chủ</a>
-      <a href="index.html#work" class="mobile-nav-link">Dự án</a>
-      <a href="About.html" class="mobile-nav-link">Giới thiệu</a>
+      <a href="projects.html" class="mobile-nav-link">Dự án</a>
+      <a href="about.html" class="mobile-nav-link active">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link">Liên hệ</a>
     </nav>
   </div>
 
   <!-- Hero Section -->
   <section class="about-hero">
-    <div class="about-hero-content">
-      
-      <div class="about-hero-text">
-        <div class="availability-badge fade-in-slow">
-          <span class="availability-dot"></span>
-          <span class="availability-text">Sẵn sàng cho dự án UI/UX & Frontend</span>
+    <div class="container">
+      <div class="about-hero-content">
+        
+        <div class="about-hero-text">
+          <div class="availability-badge fade-in-slow">
+            <span class="availability-dot"></span>
+            <span class="availability-text">Sẵn sàng cho dự án UI/UX &amp; Frontend</span>
+          </div>
+
+          <h1 class="about-title fade-in-slow">
+            Thiết kế có chủ đích,<br>
+            <span class="highlight">triển khai chuẩn kỹ thuật</span>
+          </h1>
+
+          <div class="about-description reveal">
+            <p>Mình là Khánh Huyền — UI/UX Designer &amp; Frontend Developer, hiện đang theo học ngành Kỹ thuật phần mềm tại Đại học Công nghiệp TP.HCM. Mình kết hợp tư duy thẩm mỹ hiện đại với nền tảng kỹ thuật vững chắc để tạo ra những sản phẩm số không chỉ đẹp mắt mà còn khả thi 100% khi triển khai thực tế.</p>
+            <p>Nhờ xuất phát điểm kỹ thuật, mình hiểu sâu cách một giao diện vận hành đằng sau bản vẽ: từ cấu trúc layout, responsive, trạng thái component đến code frontend (HTML/CSS, JavaScript, React) và deploy website live. Với mình, thiết kế tốt là thiết kế giải quyết đúng bài toán người dùng và vận hành mượt mà trong thực tế.</p>
+            <p>Hiện tại, mình tập trung vào thiết kế mobile app, website responsive, landing page và xây dựng website frontend. Mục tiêu của mình là cùng bạn kiến tạo nên những sản phẩm số chỉn chu, có giá trị sử dụng cao và sẵn sàng đi vào cuộc sống.</p>
+          </div>
+
+          <div class="about-highlights about-hero-highlights reveal">
+            <div class="about-highlight-item">
+              <strong>Research &amp; Flow</strong>
+              <span>Nghiên cứu hành vi và tối ưu hóa luồng trải nghiệm qua từng màn hình.</span>
+            </div>
+            <div class="about-highlight-item">
+              <strong>Design System</strong>
+              <span>Xây dựng component reusable, đảm bảo tính đồng bộ và thẩm mỹ cao cấp.</span>
+            </div>
+            <div class="about-highlight-item">
+              <strong>Design-to-Code</strong>
+              <span>Hiện thực hóa thiết kế từ Figma sang code frontend và deploy website live.</span>
+            </div>
+          </div>
+
+          <div class="about-info">
+            <div class="info-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>TP. Hồ Chí Minh, Việt Nam</span>
+            </div>
+            <div class="info-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <span>Ngành Kỹ thuật phần mềm · Đại học Công nghiệp TP.HCM</span>
+            </div>
+          </div>
+
+          <div class="about-cta reveal">
+            <a href="contact.html" class="btn-primary">
+              Bắt đầu dự án
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="projects.html" class="btn-secondary">Xem dự án</a>
+          </div>
         </div>
 
-        <h1 class="about-title fade-in-slow">
-          Thiết kế rõ ràng,<br>
-          <span class="highlight">code được, triển khai được</span>
-        </h1>
-
-        <div class="about-description reveal">
-          <p>Mình là Khánh Huyền, UI/UX Designer học ngành Kỹ thuật phần mềm. Nhờ nền tảng kỹ thuật, mình không chỉ thiết kế giao diện mà còn hiểu cách sản phẩm được triển khai, từ layout, responsive đến frontend và deploy live.</p>
-          <p>Mình thích bắt đầu từ việc hiểu người dùng, sắp xếp ý tưởng thành luồng trải nghiệm rõ ràng, sau đó tinh chỉnh giao diện qua màu sắc, typography, khoảng cách và các trạng thái nhỏ. Với mình, thiết kế tốt cần đẹp, dễ hiểu, dễ thao tác và tạo cảm giác tin cậy.</p>
-          <p>Hiện tại, mình tập trung vào thiết kế mobile app, website, landing page, prototype tương tác và frontend cơ bản với HTML/CSS, JavaScript, React. Mình muốn biến mỗi ý tưởng thành một sản phẩm chỉn chu, thực tế và có giá trị hơn cho người dùng.</p>
-        </div>
-
-        <div class="about-highlights about-hero-highlights reveal">
-          <div class="about-highlight-item">
-            <strong>Nghiên cứu</strong>
-            <span>Hiểu mục tiêu người dùng trước khi định hình giao diện.</span>
-          </div>
-          <div class="about-highlight-item">
-            <strong>Thiết kế UI</strong>
-            <span>Tạo layout chỉn chu với phân cấp rõ ràng và chi tiết tốt.</span>
-          </div>
-          <div class="about-highlight-item">
-            <strong>Frontend</strong>
-            <span>Code giao diện responsive và chuẩn bị deploy website live.</span>
+        <div class="about-hero-image reveal">
+          <div class="image-frame">
+            <img src="img/about-portrait.png" alt="Khánh Huyền UI/UX Designer portrait" class="hero-cv" loading="lazy">
+            <div class="portrait-label">
+              <span>Định vị chuyên môn</span>
+              <strong>UI/UX Designer · Kỹ thuật phần mềm</strong>
+            </div>
           </div>
         </div>
 
-        <div class="about-info">
-          <div class="info-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <span>TP. Hồ Chí Minh, Việt Nam</span>
-          </div>
-          <div class="info-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-            </svg>
-            <span>Ngành Kỹ thuật phần mềm · Đại học Công nghiệp TP.HCM</span>
-          </div>
-        </div>
-
-        <div class="about-cta reveal">
-          <a href="contact.html" class="btn-primary">
-            Liên hệ
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-          <a href="assets/docs/KhanhHuyen_CV_Eng.pdf" class="btn-secondary" download="KhanhHuyen_CV_Eng.pdf">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            Tải CV
-          </a>
-        </div>
       </div>
-
-      <div class="about-hero-image reveal">
-        <div class="image-frame">
-          <img class="hero-cv" src="img/about-portrait.png" alt="Khánh Huyền portrait" />
-          <div class="portrait-label">
-            <span>UI/UX Designer · Kỹ thuật phần mềm</span>
-            <strong>Khánh Huyền</strong>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-</div>
+  <!-- Process Section -->
+  <section class="process-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Quy trình làm việc</h2>
+        <p class="section-subtitle">Phương pháp tiếp cận bài bản giúp mỗi sản phẩm đạt được sự cân bằng giữa trải nghiệm người dùng, tính thẩm mỹ và khả năng triển khai code.</p>
+      </div>
 
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-number">01</div>
+          <div class="process-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Nghiên cứu &amp; Định hướng</h3>
+          <p>Phân tích mục tiêu sản phẩm, thấu hiểu bài toán của người dùng mục tiêu và xác định rõ các yêu cầu chức năng cốt lõi.</p>
+        </article>
 
-<!-- Quy trình làm việc -->
-<section class="process-section reveal">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Quy trình làm việc</h2>
-      <p class="section-subtitle">Quy trình rõ ràng để biến vấn đề sản phẩm thành giao diện chỉn chu và có thể triển khai.</p>
+        <article class="process-card">
+          <div class="process-number">02</div>
+          <div class="process-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3>Cấu trúc &amp; Wireframe</h3>
+          <p>Xây dựng luồng người dùng (User Flow), sơ đồ thông tin (IA) và phác thảo wireframe để định hình khung trải nghiệm trực quan.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">03</div>
+          <div class="process-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Thiết kế UI High-Fidelity</h3>
+          <p>Xây dựng Design System, trau chuốt hệ thống typography, màu sắc, khoảng cách và tạo prototype tương tác sống động trên Figma.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">04</div>
+          <div class="process-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Frontend &amp; Triển khai</h3>
+          <p>Chuyển hóa thiết kế thành mã nguồn sạch với HTML/CSS, JavaScript, React; kiểm thử responsive và deploy website live hoàn chỉnh.</p>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="process-grid">
+  <!-- Skills Detailed Section -->
+  <section class="skills-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Kỹ năng &amp; Công cụ</h2>
+        <p class="section-subtitle">Bộ kỹ năng toàn diện phục vụ từ khâu nghiên cứu, thiết kế giao diện đến lập trình frontend.</p>
+      </div>
 
-      <div class="process-card">
-        <div class="process-number">01</div>
-        <div class="process-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"/>
-            <path d="m21 21-4.35-4.35"/>
-          </svg>
+      <div class="skills-grid">
+        <article class="skill-category">
+          <h3>Thiết kế UI/UX</h3>
+          <ul class="skill-list">
+            <li><span>Figma, FigJam</span></li>
+            <li><span>Wireframing &amp; Prototyping</span></li>
+            <li><span>Design System &amp; Component Library</span></li>
+            <li><span>User Flow &amp; Information Architecture</span></li>
+            <li><span>Mobile App (iOS/Android) &amp; Web Responsive</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category">
+          <h3>Lập trình Frontend</h3>
+          <ul class="skill-list">
+            <li><span>HTML5, CSS3, SCSS</span></li>
+            <li><span>JavaScript (ES6+)</span></li>
+            <li><span>ReactJS cơ bản</span></li>
+            <li><span>Responsive Web Design</span></li>
+            <li><span>Git &amp; GitHub Version Control</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-category">
+          <h3>Tư duy &amp; Công cụ khác</h3>
+          <ul class="skill-list">
+            <li><span>Nền tảng Kỹ thuật phần mềm</span></li>
+            <li><span>Canva, Photoshop cơ bản</span></li>
+            <li><span>Vercel / Netlify Deployment</span></li>
+            <li><span>Làm việc nhóm &amp; Quản lý tiến độ</span></li>
+            <li><span>Tối ưu trải nghiệm tương tác (Micro-interactions)</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="ready-section reveal">
+    <div class="container">
+      <div class="ready-box">
+        <h2>Bạn đang cần một người bạn đồng hành cho sản phẩm số?</h2>
+        <p>Từ ứng dụng di động đến website responsive, mình sẵn sàng lắng nghe ý tưởng và cùng bạn hiện thực hóa thành sản phẩm chỉn chu nhất.</p>
+        <div class="ready-buttons">
+          <a href="contact.html" class="primary-btn">Liên hệ trao đổi ngay</a>
         </div>
-        <h3>Nghiên cứu</h3>
-        <p>Hiểu người dùng, mục tiêu và ràng buộc trước khi quyết định giao diện cần giải quyết điều gì.</p>
       </div>
+    </div>
+  </section>
 
-      <div class="process-card">
-        <div class="process-number">02</div>
-        <div class="process-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-          </svg>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">KH.</div>
+          <p class="footer-tagline">Khánh Huyền · UI/UX Designer &amp; Frontend Developer. Biến ý tưởng thành sản phẩm số đẹp mắt, trực quan và chạy thực tế.</p>
         </div>
-        <h3>Cấu trúc</h3>
-        <p>Sắp xếp flow, tổ chức nội dung và tạo wireframe để trải nghiệm dễ theo dõi hơn.</p>
-      </div>
-
-      <div class="process-card">
-        <div class="process-number">03</div>
-        <div class="process-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-            <path d="M2 2l7.586 7.586"/>
-            <circle cx="11" cy="11" r="2"/>
-          </svg>
-        </div>
-        <h3>Thiết kế</h3>
-        <p>Thiết kế màn hình high-fidelity với spacing, typography, màu sắc và component nhất quán.</p>
-      </div>
-
-      <div class="process-card">
-        <div class="process-number">04</div>
-        <div class="process-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-          </svg>
-        </div>
-        <h3>Triển khai</h3>
-        <p>Chuẩn bị file rõ ràng, đồng thời có thể code frontend responsive và deploy website khi cần.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Kỹ năng -->
-<section class="skills-section reveal">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Kỹ năng & Công cụ</h2>
-      <p class="section-subtitle">Công cụ và kỹ năng mình sử dụng trong thiết kế, frontend và triển khai sản phẩm.</p>
-    </div>
-
-    <div class="skills-grid">
-      
-      <div class="skill-category">
-        <h3>Thiết kế</h3>
-        <ul class="skill-list">
-          <li><span>Figma</span></li>
-          <li><span>Adobe XD</span></li>
-          <li><span>Adobe Photoshop</span></li>
-          <li><span>Adobe Illustrator</span></li>
-          <li><span>Framer</span></li>
-          <li><span>Webflow</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-category">
-        <h3>Frontend</h3>
-        <ul class="skill-list">
-          <li><span>HTML/CSS</span></li>
-          <li><span>JavaScript</span></li>
-          <li><span>React</span></li>
-          <li><span>Tailwind CSS</span></li>
-          <li><span>Git</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-category">
-        <h3>Khác</h3>
-        <ul class="skill-list">
-          <li><span>Nghiên cứu người dùng</span></li>
-          <li><span>Kiểm thử usability</span></li>
-          <li><span>Wireframe</span></li>
-          <li><span>Prototype</span></li>
-          <li><span>Design system</span></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Ready Section -->
-<section class="ready-section reveal">
-  <div class="ready-box">
-    <h2>Sẵn sàng tạo nên một sản phẩm chỉn chu?</h2>
-    <p>
-      Mình hiện đang mở cho các dự án freelance, hợp tác thiết kế UI/UX, xây dựng website frontend và triển khai sản phẩm số thực tế.
-    </p>
-
-    <div class="ready-buttons">
-      <a href="contact.html" class="primary-btn">Liên hệ với mình</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="footer reveal" id="contact">
-  <div class="container">
-
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
+        <div class="footer-links">
+          <h4>Điều hướng</h4>
           <ul>
             <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="index.html#work">Dự án</a></li>
-            <li><a href="About.html">Giới thiệu</a></li>
+            <li><a href="projects.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
           </ul>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Khánh Huyền. All rights reserved.</p>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
