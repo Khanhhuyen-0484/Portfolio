@@ -3,505 +3,470 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khánh Huyền | UI/UX Designer &amp; Frontend Developer</title>
-
-  <!-- SEO & Social Meta -->
-  <meta name="description" content="Khánh Huyền là UI/UX Designer &amp; Frontend Developer chuyên thiết kế mobile app, website responsive và triển khai sản phẩm live chỉn chu.">
-  <meta name="author" content="Khánh Huyền">
+  <title>Khánh Huyền · Frontend Developer &amp; UI/UX Designer</title>
+  <meta name="description" content="Portfolio của Khánh Huyền - Frontend Developer & UI/UX Designer. Thiết kế giao diện mobile app, website và lập trình frontend responsive.">
   
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://khanhhuyen.dev/">
-  <meta property="og:title" content="Khánh Huyền | UI/UX Designer &amp; Frontend Developer">
-  <meta property="og:description" content="Thiết kế UI/UX cho mobile app, website và code frontend responsive, biến giao diện thành website live chỉn chu, dễ dùng.">
-  <meta property="og:image" content="img/about-portrait.png">
+  <meta property="og:url" content="https://khanhhuyen-portfolio.vercel.app/">
+  <meta property="og:title" content="Khánh Huyền · Frontend Developer &amp; UI/UX Designer">
+  <meta property="og:description" content="Thiết kế trải nghiệm số tinh tế, hiệu năng cao — kết hợp giữa tư duy chiến lược UI/UX và năng lực code Frontend thực tế.">
+  <meta property="og:image" content="https://khanhhuyen-portfolio.vercel.app/img/about-portrait.png">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Khánh Huyền | UI/UX Designer &amp; Frontend Developer">
-  <meta name="twitter:description" content="Thiết kế UI/UX cho mobile app, website và code frontend responsive, biến giao diện thành website live chỉn chu, dễ dùng.">
-  <meta name="twitter:image" content="img/about-portrait.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Khánh Huyền · Frontend Developer &amp; UI/UX Designer">
+  <meta property="twitter:description" content="Thiết kế trải nghiệm số tinh tế, hiệu năng cao — kết hợp giữa tư duy chiến lược UI/UX và năng lực code Frontend thực tế.">
+  <meta property="twitter:image" content="https://khanhhuyen-portfolio.vercel.app/img/about-portrait.png">
 
-  <link rel="stylesheet" href="css/home.css">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700&family=Passions+Conflict&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-
 <body>
-
-<div class="gradient"></div>
-
-<div class="container">
+  <div class="gradient"></div>
 
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link active">Trang chủ</a>
-      <a href="projects.html" class="nav-link">Dự án</a>
+    <nav class="nav">
+      <a href="#featured-work" class="nav-link">Dự án</a>
+      <a href="#capabilities" class="nav-link">Năng lực</a>
       <a href="about.html" class="nav-link">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="contact.html" class="nav-link">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
-  <!-- Mobile Navigation Overlay -->
+
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
       <a href="index.html" class="mobile-nav-link active">Trang chủ</a>
-      <a href="projects.html" class="mobile-nav-link">Dự án</a>
+      <a href="#featured-work" class="mobile-nav-link">Dự án</a>
+      <a href="#capabilities" class="mobile-nav-link">Năng lực</a>
       <a href="about.html" class="mobile-nav-link">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--accent-cyan);">Tải CV (PDF) ↓</a>
     </nav>
   </div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
+  <main>
+    <!-- Hero Section (Editorial Dark Asymmetric Layout) -->
+    <section class="editorial-hero">
+      <div class="container">
+        <div class="editorial-hero-grid">
+          
+          <!-- Left Column: Typography & CTAs -->
+          <div class="editorial-hero-content">
+            <span class="editorial-hero-kicker">THIẾT KẾ TRẢI NGHIỆM SỐ &amp; FRONTEND</span>
+            <h1 class="editorial-hero-title">
+              <span>FRONTEND &amp;</span>
+              <span>UI/UX DESIGNER</span>
+            </h1>
+            <p class="editorial-hero-desc">
+              Mình là Khánh Huyền — sinh viên Kỹ thuật phần mềm (IUH), kết hợp tư duy chiến lược UI/UX với năng lực code Frontend ReactJS &amp; HTML/CSS để kiến tạo những sản phẩm số tinh tế, chuẩn xác và vận hành mượt mà.
+            </p>
+            <div class="editorial-hero-actions">
+              <a href="#featured-work" class="btn-editorial-primary">
+                Xem dự án
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="btn-editorial-ghost">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Tải CV (PDF)
+              </a>
+            </div>
+          </div>
 
-      <div class="availability-badge fade-in-slow">
-        <span class="availability-dot"></span>
-        <span class="availability-text">Sẵn sàng cho dự án UI/UX &amp; Frontend</span>
+          <!-- Right Column: Cutout Portrait & Ambient Layer -->
+          <div class="editorial-hero-visual">
+            <div class="portrait-ambient-glow"></div>
+            <div class="portrait-frame">
+              <img src="img/about-portrait.png" alt="Khánh Huyền Frontend Developer & UI/UX Designer" loading="eager">
+            </div>
+            <span class="sparkle-icon sparkle-1">✦</span>
+            <span class="sparkle-icon sparkle-2">✦</span>
+
+            <a href="contact.html" class="availability-stamp">
+              <span class="stamp-kicker">SẴN SÀNG CHO</span>
+              <strong class="stamp-title">
+                FREELANCE / FULLTIME
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </strong>
+              <span class="stamp-sub">DỰ ÁN MỚI 2026</span>
+            </a>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <h1 class="hero-title fade-in-slow">
-        <span>Khánh Huyền</span>
-        <span class="subtitle">UI/UX Designer &amp; Frontend Developer</span>
-      </h1>
-
-      <p class="hero-description reveal">
-        Mình thiết kế UI/UX cho mobile app, website và có thể code frontend responsive, biến giao diện thành website live chỉn chu, dễ dùng.
-      </p>
-
-      <div class="hero-cta reveal">
-        <a href="contact.html" class="btn-primary">
-          Bắt đầu dự án
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-
-        <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-          </svg>
-          Tải CV
-        </a>
+    <!-- Stats Bento Banner (4-Column Horizontal Panel) -->
+    <section class="stats-banner-section">
+      <div class="container">
+        <div class="stats-banner-box">
+          <div class="stat-item">
+            <span class="stat-icon">✦</span>
+            <strong class="stat-number">10+</strong>
+            <span class="stat-label">Tháng kinh nghiệm</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">👥</span>
+            <strong class="stat-number">08+</strong>
+            <span class="stat-label">Dự án hoàn chỉnh</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <strong class="stat-number">100%</strong>
+            <span class="stat-label">Design-to-Code</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">🌐</span>
+            <strong class="stat-number">02</strong>
+            <span class="stat-label">Nền tảng (Web &amp; App)</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Featured Work Section (3 Luxury Minimalist Cards) -->
+    <section class="featured-work-section" id="featured-work">
+      <div class="container">
+        <div class="section-head-bar">
+          <div>
+            <span class="kicker-text">FEATURED WORK</span>
+            <h2 class="section-headline">DỰ ÁN TIÊU BIỂU</h2>
+          </div>
+          <a href="projects.html" class="explore-all-link">
+            Xem tất cả dự án
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
 
-  <!-- Stats -->
-  <section class="process-section reveal">
+        <div class="featured-grid">
+          
+          <!-- Card 1: The Wann -->
+          <article class="featured-card">
+            <a href="the-wann.html">
+              <div class="featured-card-media">
+                <img src="assets/images/thewann/thewann-device-mockup.png" alt="Website The Wann Dining & Lounge" loading="lazy">
+              </div>
+              <div class="featured-card-footer">
+                <div class="featured-card-info">
+                  <h3 class="featured-card-title">The Wann</h3>
+                  <span class="featured-card-cat">Website Frontend · Branding</span>
+                </div>
+                <div class="card-arrow-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 2: Sen Restaurant -->
+          <article class="featured-card">
+            <a href="sen-restaurant.html">
+              <div class="featured-card-media">
+                <img src="assets/images/sen/sen-home-real.png" alt="Website Nhà hàng Sen" loading="lazy">
+              </div>
+              <div class="featured-card-footer">
+                <div class="featured-card-info">
+                  <h3 class="featured-card-title">Nhà hàng Sen</h3>
+                  <span class="featured-card-cat">Website Design · Frontend</span>
+                </div>
+                <div class="card-arrow-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 3: KidGuard App -->
+          <article class="featured-card">
+            <a href="kidguard.html">
+              <div class="featured-card-media">
+                <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard Parental Control Mobile App" loading="lazy">
+              </div>
+              <div class="featured-card-footer">
+                <div class="featured-card-info">
+                  <h3 class="featured-card-title">KidGuard App</h3>
+                  <span class="featured-card-cat">Mobile App Design · UI/UX</span>
+                </div>
+                <div class="card-arrow-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities & Tools (Two-Column Bento Grid) -->
+    <section class="capabilities-section" id="capabilities">
+      <div class="container">
+        <div class="capabilities-layout">
+          
+          <!-- Left Column: Core Capabilities (2x3 grid) -->
+          <div class="capabilities-box">
+            <span class="kicker-text">CHUYÊN MÔN</span>
+            <h2 class="section-headline">NĂNG LỰC CỐT LÕI</h2>
+            
+            <div class="capabilities-grid">
+              
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </div>
+                <h3 class="capability-title">UI/UX Design</h3>
+                <p class="capability-desc">Nghiên cứu hành vi người dùng, tối ưu hóa user flow và thiết kế giao diện trực quan, dễ dùng.</p>
+              </div>
+
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3 class="capability-title">Web Design</h3>
+                <p class="capability-desc">Thiết kế website và landing page hiện đại, responsive đa thiết bị, chuẩn bản sắc thương hiệu.</p>
+              </div>
+
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3 class="capability-title">Frontend Dev</h3>
+                <p class="capability-desc">Chuyển hóa bản vẽ Figma thành mã nguồn sạch với ReactJS, HTML5/CSS3, JavaScript và Tailwind.</p>
+              </div>
+
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-6 2-2 6z"/></svg>
+                </div>
+                <h3 class="capability-title">Interaction Design</h3>
+                <p class="capability-desc">Xây dựng micro-interactions, animation mượt mà nâng tầm cảm xúc và giữ chân người dùng.</p>
+              </div>
+
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <h3 class="capability-title">Design Systems</h3>
+                <p class="capability-desc">Xây dựng hệ thống component, typography, color tokens đồng bộ và mở rộng dễ dàng.</p>
+              </div>
+
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <h3 class="capability-title">Prototyping</h3>
+                <p class="capability-desc">Chuẩn bị luồng tương tác chân thực trên Figma để demo và kiểm thử nhanh với khách hàng.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Tools & Education -->
+          <div class="sidebar-bento">
+            
+            <div class="tools-box">
+              <span class="kicker-text">STACK KỸ THUẬT</span>
+              <h2 class="section-headline">CÔNG CỤ &amp; CÔNG NGHỆ</h2>
+              
+              <div class="tools-grid">
+                <div class="tool-chip"><span class="tool-badge">UI</span> Figma</div>
+                <div class="tool-chip"><span class="tool-badge">FE</span> ReactJS</div>
+                <div class="tool-chip"><span class="tool-badge">FE</span> HTML5 / CSS3</div>
+                <div class="tool-chip"><span class="tool-badge">FE</span> JavaScript (ES6)</div>
+                <div class="tool-chip"><span class="tool-badge">IDE</span> VS Code</div>
+                <div class="tool-chip"><span class="tool-badge">GIT</span> Git &amp; GitHub</div>
+                <div class="tool-chip"><span class="tool-badge">OPS</span> Vercel Deploy</div>
+                <div class="tool-chip"><span class="tool-badge">AI</span> AI Tools &amp; Canva</div>
+              </div>
+            </div>
+
+            <div class="cert-box">
+              <span class="kicker-text">HỌC VẤN &amp; KINH NGHIỆM</span>
+              <h2 class="section-headline">NỀN TẢNG CHUYÊN MÔN</h2>
+              
+              <div class="cert-list">
+                <div class="cert-item">
+                  <div class="cert-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  </div>
+                  <div class="cert-text">
+                    <strong>Đại học Công nghiệp TP.HCM (IUH)</strong>
+                    <span>Ngành Kỹ thuật phần mềm · 2022 - Nay</span>
+                  </div>
+                </div>
+
+                <div class="cert-item">
+                  <div class="cert-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  </div>
+                  <div class="cert-text">
+                    <strong>UI/UX Designer Intern</strong>
+                    <span>Công ty CP Tập đoàn EMC · 05/2025 - 08/2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- My Design Process (5-Step Stepper Bar) -->
+    <section class="process-section-editorial">
+      <div class="container">
+        <div class="process-stepper-box">
+          <span class="kicker-text">QUY TRÌNH THỰC THI</span>
+          <h2 class="section-headline">QUY TRÌNH THIẾT KẾ &amp; TRIỂN KHAI</h2>
+          
+          <div class="process-steps-row">
+            
+            <div class="process-step-item">
+              <div class="step-num-title">
+                <span class="step-number">01</span>
+                <span class="step-name">DISCOVER</span>
+              </div>
+              <div class="step-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <p class="step-desc">Nghiên cứu bài toán sản phẩm, mục tiêu và thấu hiểu người dùng.</p>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num-title">
+                <span class="step-number">02</span>
+                <span class="step-name">DEFINE</span>
+              </div>
+              <div class="step-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <p class="step-desc">Phân tích yêu cầu, xây dựng sơ đồ thông tin (IA) &amp; Wireframe luồng chính.</p>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num-title">
+                <span class="step-number">03</span>
+                <span class="step-name">DESIGN</span>
+              </div>
+              <div class="step-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+              </div>
+              <p class="step-desc">Thiết kế UI High-Fidelity, màu sắc, typography &amp; Design System.</p>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num-title">
+                <span class="step-number">04</span>
+                <span class="step-name">DEVELOP</span>
+              </div>
+              <div class="step-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <p class="step-desc">Lập trình Frontend responsive bằng ReactJS, HTML/CSS, JS sạch chuẩn.</p>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num-title">
+                <span class="step-number">05</span>
+                <span class="step-name">DELIVER</span>
+              </div>
+              <div class="step-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+              </div>
+              <p class="step-desc">Kiểm thử đa thiết bị, tối ưu hiệu năng &amp; deploy website live lên Vercel.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Footer Banner (Let's Create Something Extraordinary) -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-box">
+          
+          <div class="metallic-badge-card">
+            <h3 class="metallic-title">
+              LET'S CREATE<br>
+              SOMETHING <span>✦</span><br>
+              EXTRAORDINARY
+            </h3>
+          </div>
+
+          <div class="cta-banner-center">
+            <p class="cta-banner-pitch">
+              Mình luôn sẵn sàng đón nhận các cơ hội việc làm UI/UX &amp; Frontend, dự án Freelance và hợp tác phát triển sản phẩm số.
+            </p>
+            <a href="contact.html" class="btn-cta-work">
+              Liên hệ hợp tác
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+
+          <div class="cta-contact-channels">
+            <a href="mailto:tkhanhhuyen0484@gmail.com" class="channel-link">
+              <span class="channel-icon">✉</span>
+              tkhanhhuyen0484@gmail.com
+            </a>
+            <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="channel-link">
+              <span class="channel-icon">☏</span>
+              0368 965 381 (Zalo)
+            </a>
+            <div class="channel-link">
+              <span class="channel-icon">⚲</span>
+              TP. Hồ Chí Minh, Việt Nam
+            </div>
+            <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="channel-link" style="color: var(--accent-cyan);">
+              <span class="channel-icon">↓</span>
+              Tải CV Khánh Huyền (PDF)
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Quy trình thiết kế chỉn chu</h2>
-          <p class="section-subtitle">Mỗi dự án đều được xây dựng từ nghiên cứu, cấu trúc rõ ràng và ngôn ngữ thị giác mạch lạc.</p>
-        </div>
-      </div>
-
-      <div class="process-grid">
-        <article class="process-card">
-          <div class="process-number">01</div>
-          <div class="process-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h10M4 17h13"/></svg>
-          </div>
-          <h3>Hiểu đúng vấn đề</h3>
-          <p>Mình xác định mục tiêu người dùng, bối cảnh sản phẩm và các ràng buộc chính trước khi thiết kế màn hình.</p>
-        </article>
-        <article class="process-card">
-          <div class="process-number">02</div>
-          <div class="process-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg>
-          </div>
-          <h3>Xây dựng trải nghiệm</h3>
-          <p>Mình sắp xếp onboarding, trang chủ, luồng thao tác và các trạng thái phụ để app dễ hiểu và dễ dùng.</p>
-        </article>
-        <article class="process-card">
-          <div class="process-number">03</div>
-          <div class="process-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <h3>Tinh chỉnh giao diện</h3>
-          <p>Mình tinh chỉnh khoảng cách, phân cấp, màu sắc và component để giao diện thống nhất và chỉn chu.</p>
-        </article>
-        <article class="process-card">
-          <div class="process-number">04</div>
-          <div class="process-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
-          </div>
-          <h3>Chuẩn bị bàn giao</h3>
-          <p>Mình chuẩn bị màn hình, trạng thái và tài nguyên rõ ràng để demo, nhận feedback và triển khai.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-
-<!-- Trọng tâm areas -->
-<section class="focus-section reveal">
-  <div class="container">
-    <h2 class="focus-title">Mảng tập trung chính</h2>
-    <p class="section-subtitle" style="text-align:center; max-width:760px; margin: -24px auto 32px;">Mình tập trung vào những phần giúp trải nghiệm sản phẩm trở nên rõ ràng, dễ dùng và có chủ đích.</p>
-    <div class="focus-grid">
-      <div class="focus-card">
-        <div class="focus-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-        </div>
-        <h3>Mobile Apps</h3>
-        <p>Trải nghiệm mobile có luồng dùng dễ hiểu, thao tác nhanh và tính ứng dụng cao.</p>
-      </div>
-      <div class="focus-card">
-        <div class="focus-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18M8 20h8"/></svg>
-        </div>
-        <h3>Website</h3>
-        <p>Website responsive có cấu trúc rõ, kể chuyện tốt và hỗ trợ mục tiêu chuyển đổi.</p>
-      </div>
-      <div class="focus-card">
-        <div class="focus-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </div>
-        <h3>Hệ thống</h3>
-        <p>Design system và component có khả năng mở rộng, giúp sản phẩm nhất quán và dễ phát triển.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Frontend -->
-<section class="frontend-section reveal">
-  <div class="container">
-    <div class="frontend-panel">
-      <div class="frontend-copy">
-        <p class="case-breadcrumb">Frontend & triển khai</p>
-        <h2 class="section-title">Không chỉ dừng ở thiết kế, mình có thể đưa giao diện lên thành website thật.</h2>
-        <p class="section-subtitle">Với các dự án website, mình tham gia từ UI/UX, xây dựng layout responsive, code giao diện bằng HTML/CSS, JavaScript, React đến deploy live để sản phẩm có thể truy cập và kiểm thử thực tế.</p>
-      </div>
-      <div class="frontend-grid">
-        <article class="frontend-card">
-          <span>01</span>
-          <h3>Thiết kế giao diện</h3>
-          <p>Xây dựng cấu trúc trang, phân cấp nội dung, màu sắc, typography và trạng thái UI phù hợp với thương hiệu.</p>
-        </article>
-        <article class="frontend-card">
-          <span>02</span>
-          <h3>Code responsive</h3>
-          <p>Triển khai giao diện rõ ràng bằng HTML/CSS, JavaScript hoặc React, đảm bảo responsive trên desktop và mobile.</p>
-        </article>
-        <article class="frontend-card">
-          <span>03</span>
-          <h3>Deploy live</h3>
-          <p>Hoàn thiện website, đưa lên môi trường live và kiểm tra để dự án có thể chia sẻ như một sản phẩm thực tế.</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Skills -->
-<section class="skills-section reveal">
-  <div class="container">
-    <div class="skills-container">
-
-      <div class="skill-item"><span class="skill-name">Figma</span></div>
-      <div class="skill-item"><span class="skill-name">Framer</span></div>
-      <div class="skill-item"><span class="skill-name">Adobe Suite</span></div>
-      <div class="skill-item"><span class="skill-name">HTML/CSS</span></div>
-      <div class="skill-item"><span class="skill-name">JavaScript</span></div>
-      <div class="skill-item"><span class="skill-name">React</span></div>
-      <div class="skill-item"><span class="skill-name">Tailwind</span></div>
-      <div class="skill-item"><span class="skill-name">Frontend</span></div>
-      <div class="skill-item"><span class="skill-name">Deploy</span></div>
-      <div class="skill-item"><span class="skill-name">Webflow</span></div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Dự án nổi bật -->
-<section class="work-section reveal" id="work">
-  <div class="container">
-
-    <div class="section-header">
-      <h2 class="section-title">Dự án nổi bật</h2>
-      <a href="projects.html" class="see-all-link">
-        Xem tất cả dự án
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <a href="the-wann.html">
-          <div class="project-overlay">
-            <img src="assets/images/thewann/thewann-device-mockup.png" alt="Mockup thiết bị website The Wann" class="project-image">
-          </div>
-          <div class="project-content">
-            <span class="project-category website">Website Frontend</span>
-            <h3 class="project-title">The Wann</h3>
-            <p class="project-description">
-              Website nhà hàng và nightlife với luồng xem menu, kể chuyện sự kiện và đặt bàn rõ ràng.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: Thiết kế · Code · Deploy</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="sen-restaurant.html">
-          <div class="project-overlay">
-            <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen" class="project-image" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="project-category website">Website Frontend</span>
-            <h3 class="project-title">Nhà hàng Sen</h3>
-            <p class="project-description">
-              Website nhà hàng responsive với hình ảnh ẩm thực tinh tế, nội dung menu rõ và luồng đặt bàn dễ hiểu.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: Thiết kế · Code · Deploy</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="kidguard.html">
-          <div class="project-overlay">
-            <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard parental control mockup mobile app" class="project-image">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">KidGuard App</h3>
-            <p class="project-description">
-              App kiểm soát trẻ em với quản lý thời gian màn hình, app an toàn, thiết lập hồ sơ và trạng thái khóa.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="ai-voice-lock.html">
-          <div class="project-overlay">
-            <img src="assets/images/aivoicelock/ai-voice-lock-mockup.png" alt="AI Voice Lock Smart Note mockup mobile app" class="project-image">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">AI Voice Lock: Smart Note</h3>
-            <p class="project-description">
-              App ghi chú bảo mật bằng giọng nói với tóm tắt thông minh, chế độ khóa và ghi chú riêng tư.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="ultra-camera.html">
-          <div class="project-overlay">
-            <img src="assets/images/ultracamera/ultra-mockup.png" alt="Ultra Camera mockup mobile app" class="project-image">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">Ultra Camera</h3>
-            <p class="project-description">
-              App camera chuyên nghiệp với luồng chụp ảnh, thư viện và chỉnh sửa ảnh.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="caretrees.html">
-          <div class="project-overlay">
-            <img src="img/care app.png" alt="Care Trees Thiết kế UI Mobile App" class="project-image" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">Care Trees App</h3>
-            <p class="project-description">
-              App chăm sóc cây với nhắc nhở cá nhân hóa và luồng chăm sóc hằng ngày đơn giản.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="elogi.html">
-          <div class="project-overlay">
-            <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI Mobile E-commerce App UI Design" class="project-image" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">ELOGI</h3>
-            <p class="project-description">
-              App thương mại điện tử mobile với tìm kiếm sản phẩm, chat, theo dõi đơn hàng và luồng mua sắm gọn gàng.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="project-card">
-        <a href="pranksound.html">
-          <div class="project-overlay">
-            <img src="assets/images/pranksound/pranksound-hero.png" alt="Prank Sound thiết kế UI app giải trí mobile" class="project-image" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="project-category mobile">Mobile App</span>
-            <h3 class="project-title">Prank Sound</h3>
-            <p class="project-description">
-              App giải trí vui nhộn với hiệu ứng âm thanh prank, hình ảnh nổi bật và tương tác nhanh.
-            </p>
-            <div class="project-proof">
-              <span>Vai trò: UI/UX</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- About teaser -->
-<section class="about-teaser reveal">
-  <div class="container">
-    <div class="about-teaser-inner">
-      <div class="about-teaser-text">
-        <p class="case-breadcrumb">Giới thiệu</p>
-        <h2>Thiết kế có chủ đích. Triển khai chuẩn kỹ thuật.</h2>
-        <p>Mình là Khánh Huyền — UI/UX Designer &amp; Frontend Developer. Mình kết hợp tư duy thẩm mỹ hiện đại với nền tảng Kỹ thuật phần mềm để tạo ra những sản phẩm số không chỉ đẹp mắt mà còn khả thi 100% khi triển khai thực tế.</p>
-        <p>Thế mạnh của mình là đồng hành cùng dự án từ giai đoạn nghiên cứu hành vi, wireframe, thiết kế UI sắc nét cho đến khi hoàn thiện code frontend responsive và đưa sản phẩm lên môi trường live.</p>
-        <div class="about-highlights">
-          <div class="about-highlight-item">
-            <strong>Research &amp; Flow</strong>
-            <span>Nghiên cứu hành vi và tối ưu hóa luồng trải nghiệm qua từng màn hình.</span>
-          </div>
-          <div class="about-highlight-item">
-            <strong>Design System</strong>
-            <span>Xây dựng component reusable, đảm bảo tính đồng bộ và thẩm mỹ cao cấp.</span>
-          </div>
-          <div class="about-highlight-item">
-            <strong>Design-to-Code</strong>
-            <span>Hiện thực hóa thiết kế từ Figma sang code frontend (HTML/CSS, React) mượt mà.</span>
-          </div>
-        </div>
-        <a href="about.html" class="about-teaser-link">
-          Tìm hiểu thêm về mình
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-      <div class="about-teaser-visual">
-        <div class="home-profile-card">
-          <img src="img/about-portrait.png" alt="Khánh Huyền portrait" loading="lazy">
-          <div class="home-profile-copy">
-            <span>UI/UX Designer &amp; Frontend</span>
-            <strong>Mobile App · Website · Prototype</strong>
-          </div>
-          <div class="home-profile-tags">
-            <span>Figma</span>
-            <span>Design System</span>
-            <span>HTML/CSS/JS</span>
-            <span>React</span>
-            <span>Deploy Live</span>
-          </div>
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ================= READY SECTION ================= -->
-<section class="ready-section reveal">
-  <div class="ready-box">
-    <h2>Sẵn sàng tạo nên một trải nghiệm tốt hơn?</h2>
-    <p>
-      Mình đang mở cho các dự án freelance và hợp tác thiết kế phù hợp. Nếu bạn đang xây dựng một sản phẩm cần trải nghiệm chỉn chu, rõ ràng và lấy người dùng làm trung tâm, mình rất sẵn sàng cùng bạn định hình nó.
-    </p>
-
-    <div class="ready-buttons">
-      <a href="contact.html" class="primary-btn">Liên hệ với mình</a>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer reveal" id="contact">
-  <div class="container">
-
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho sản phẩm, thương hiệu và đội ngũ hiện đại.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
-</div>
-
-<script src="js/main.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
