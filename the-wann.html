@@ -22,36 +22,40 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
-<div class="container">
-  <!-- Header -->
+<!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
+    <nav class="nav">
       <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
       <a href="about.html" class="nav-link ">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="contact.html" class="nav-link ">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
-  <!-- Mobile Navigation Overlay -->
+
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
@@ -59,9 +63,9 @@
       <a href="projects.html" class="mobile-nav-link active">Dự án</a>
       <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--cyan-accent); font-weight: 700;">Tải CV (PDF) ↓</a>
     </nav>
   </div>
-</div>
 
 <main>
   <section class="wann-hero">
@@ -110,22 +114,97 @@
     </div>
   </section>
 
-  <section class="case-section wann-screens-section">
-    <div class="container reveal">
-      <div class="case-section-header"><p class="case-kicker">Hình ảnh thực tế</p><h2 class="case-heading">Một vài góc nhìn từ website live đang hoạt động.</h2></div>
-      <div class="wann-screen-gallery wann-screen-gallery-real">
-        <figure class="wann-screen-card wann-screen-wide">
-          <img src="assets/images/thewann/thewann-home-real.png" alt="Ảnh chụp trang chủ website The Wann" loading="lazy">
-          <figcaption><span>Trang chủ</span><strong>Hero section, CTA đặt bàn và thông tin địa điểm</strong></figcaption>
-        </figure>
-        <figure class="wann-screen-card">
-          <img src="assets/images/thewann/thewann-menu-real.png" alt="Ảnh chụp trang menu website The Wann" loading="lazy">
-          <figcaption><span>Menu</span><strong>Danh mục món ăn, đồ uống và combo tiệc</strong></figcaption>
-        </figure>
-        <figure class="wann-screen-card">
-          <img src="assets/images/thewann/thewann-blog-real.png" alt="Ảnh chụp trang blog website The Wann" loading="lazy">
-          <figcaption><span>Blog &amp; Sự kiện</span><strong>Tin tức, đêm nhạc và các chương trình ưu đãi</strong></figcaption>
-        </figure>
+    <!-- Real Live Website Screens Showcase -->
+  <section class="case-section wann-screens-section" id="screens">
+    <div class="container">
+      <div class="case-section-header">
+        <p class="case-kicker">HÌNH ẢNH THỰC TẾ</p>
+        <h2 class="case-heading">Giao diện thực tế từ website live đang hoạt động</h2>
+        <p class="case-subtitle" style="margin-bottom: 0;">Mọi phân khu giao diện được thiết kế chuẩn xác theo tỷ lệ màn hình thực tế, mang đậm phong cách nightlife cao cấp và tối ưu tỷ lệ chuyển đổi đặt bàn.</p>
+      </div>
+
+      <!-- Feature 1: Trang chủ (Full Width Widescreen Browser Frame) -->
+      <div class="browser-showcase-card showcase-featured-large">
+        <div class="browser-window-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-url-pill">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>https://thewann.com/</span>
+          </div>
+          <div class="browser-badge-live">LIVE PRODUCTION</div>
+        </div>
+        <div class="browser-window-body" title="Nhấp để phóng to xem trọn vẹn">
+          <img src="assets/images/thewann/thewann-home-real.png" alt="Ảnh chụp thực tế trang chủ website The Wann" loading="lazy" class="zoomable-img">
+        </div>
+        <div class="browser-card-caption">
+          <div class="caption-title-row">
+            <span class="caption-tag">Trang chủ &amp; Hero Section</span>
+            <span class="caption-hint">Nhấp vào ảnh để phóng to toàn màn hình ↗</span>
+          </div>
+          <h3 class="caption-heading">Hero banner nhận diện thương hiệu &amp; CTA đặt bàn nổi bật</h3>
+          <p class="caption-text">Thiết kế không gian đêm huyền ảo với tông màu neon tím hồng trên nền tối sâu thẳm. Nút 'ĐẶT BÀN NGAY' và 'XEM MENU' được bố trí ngay trung tâm cùng thông tin địa chỉ và giờ mở cửa tại Quận 1.</p>
+        </div>
+      </div>
+
+      <!-- Features 2 & 3: Menu & Blog (2-Column Large Browser Frames) -->
+      <div class="browser-showcase-grid-2">
+        
+        <!-- Menu Showcase -->
+        <div class="browser-showcase-card">
+          <div class="browser-window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>https://thewann.com/menu</span>
+            </div>
+          </div>
+          <div class="browser-window-body" title="Nhấp để phóng to xem trọn vẹn">
+            <img src="assets/images/thewann/thewann-menu-real.png" alt="Ảnh chụp trang Menu website The Wann" loading="lazy" class="zoomable-img">
+          </div>
+          <div class="browser-card-caption">
+            <div class="caption-title-row">
+              <span class="caption-tag">Thực đơn ẩm thực</span>
+              <span class="caption-hint">Phóng to ↗</span>
+            </div>
+            <h3 class="caption-heading">Menu danh mục món ăn &amp; Combo tiệc</h3>
+            <p class="caption-text">Phân loại món chính, đồ uống, combo theo các thẻ tab trực quan, giúp thực khách dễ dàng tìm kiếm và xem chi tiết giá.</p>
+          </div>
+        </div>
+
+        <!-- Blog Showcase -->
+        <div class="browser-showcase-card">
+          <div class="browser-window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>https://thewann.com/blog</span>
+            </div>
+          </div>
+          <div class="browser-window-body" title="Nhấp để phóng to xem trọn vẹn">
+            <img src="assets/images/thewann/thewann-blog-real.png" alt="Ảnh chụp trang Blog &amp; Sự kiện website The Wann" loading="lazy" class="zoomable-img">
+          </div>
+          <div class="browser-card-caption">
+            <div class="caption-title-row">
+              <span class="caption-tag">Tin tức &amp; Sự kiện</span>
+              <span class="caption-hint">Phóng to ↗</span>
+            </div>
+            <h3 class="caption-heading">Trang Blog âm nhạc và các đêm tiệc</h3>
+            <p class="caption-text">Cập nhật lịch biểu diễn của các DJ, nghệ sĩ và những đêm nhạc đặc sắc, giữ lửa kết nối liên tục với giới trẻ về đêm.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -172,36 +251,21 @@
   </section>
 </main>
 
-<footer class="footer reveal" id="contact">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 <script src="js/main.js"></script>
 </body>

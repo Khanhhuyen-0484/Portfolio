@@ -3,56 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liên hệ | Khánh Huyền – UI/UX Designer &amp; Frontend Developer</title>
+  <title>Liên hệ · Khánh Huyền | Frontend Developer &amp; UI/UX Designer</title>
   <meta name="description" content="Liên hệ với Khánh Huyền cho các cơ hội việc làm, dự án thiết kế UI/UX mobile app, website và code frontend responsive.">
-  <meta name="author" content="Khánh Huyền">
-
+  
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://khanhhuyen.dev/contact.html">
-  <meta property="og:title" content="Liên hệ | Khánh Huyền – UI/UX Designer &amp; Frontend Developer">
+  <meta property="og:url" content="https://khanhhuyen-portfolio.vercel.app/contact.html">
+  <meta property="og:title" content="Liên hệ · Khánh Huyền | Frontend Developer &amp; UI/UX Designer">
   <meta property="og:description" content="Bạn đang có ý tưởng hoặc dự án cần thiết kế UI/UX &amp; Code Frontend? Hãy kết nối với mình nhé.">
-  <meta property="og:image" content="img/about-portrait.png">
+  <meta property="og:image" content="https://khanhhuyen-portfolio.vercel.app/assets/images/thewann/thewann-device-mockup.png">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Liên hệ | Khánh Huyền – UI/UX Designer &amp; Frontend Developer">
-  <meta name="twitter:description" content="Bạn đang có ý tưởng hoặc dự án cần thiết kế UI/UX &amp; Code Frontend? Hãy kết nối với mình nhé.">
-  <meta name="twitter:image" content="img/about-portrait.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Liên hệ · Khánh Huyền | Frontend Developer &amp; UI/UX Designer">
+  <meta property="twitter:description" content="Bạn đang có ý tưởng hoặc dự án cần thiết kế UI/UX &amp; Code Frontend? Hãy kết nối với mình nhé.">
+  <meta property="twitter:image" content="https://khanhhuyen-portfolio.vercel.app/assets/images/thewann/thewann-device-mockup.png">
 
-  <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+  <div class="gradient"></div>
 
-<div class="gradient"></div>
-
-<div class="container">
-  <!-- Header -->
+    <!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
+    <nav class="nav">
       <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link ">Dự án</a>
       <a href="about.html" class="nav-link ">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="contact.html" class="nav-link active">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only active">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
-  <!-- Mobile Navigation Overlay -->
+
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
@@ -60,102 +62,89 @@
       <a href="projects.html" class="mobile-nav-link ">Dự án</a>
       <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link active">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--cyan-accent); font-weight: 700;">Tải CV (PDF) ↓</a>
     </nav>
   </div>
-</div>
 
-<section class="contact-hero">
-  <div class="container">
-    <div class="contact-layout reveal">
-      <div class="contact-intro">
-        <p class="case-breadcrumb">Kết nối &amp; Hợp tác</p>
-        <h1>Bạn đang có ý tưởng, sản phẩm hay dự án cần thực hiện?</h1>
-        <p>
-          Mình luôn sẵn sàng đón nhận các cơ hội việc làm UI/UX Designer, dự án freelance và hợp tác phát triển sản phẩm.
-          Nếu bạn cần thiết kế giao diện mobile app, website, landing page hay xây dựng website frontend responsive,
-          đừng ngần ngại liên hệ với mình nhé.
-        </p>
+<main>
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <div class="contact-intro">
+            <span class="kicker-text">KẾT NỐI &amp; HỢP TÁC</span>
+            <h1 class="editorial-hero-title" style="font-size: 56px; line-height: 1.06; margin-bottom: 20px;">
+              <span>BẠN ĐANG CẦN</span>
+              <span>PHÁT TRIỂN DỰ ÁN?</span>
+            </h1>
+            <p class="editorial-hero-desc" style="max-width: 100%; margin-bottom: 28px;">
+              Mình luôn sẵn sàng đón nhận các cơ hội việc làm UI/UX Designer &amp; Frontend Developer, dự án Freelance và hợp tác phát triển sản phẩm số. Nếu bạn cần thiết kế giao diện mobile app, website, landing page hay xây dựng website frontend responsive, đừng ngần ngại kết nối với mình nhé.
+            </p>
 
-        <div class="contact-meta">
-          <span>Trọng tâm: Mobile App UI, Website Responsive, Landing Page &amp; Frontend.</span>
-          <span>Địa điểm: TP. Hồ Chí Minh, Việt Nam.</span>
-          <span>Email: <a href="mailto:tkhanhhuyen0484@gmail.com">tkhanhhuyen0484@gmail.com</a></span>
-        </div>
+            <div class="tools-grid" style="grid-template-columns: 1fr; margin-bottom: 24px;">
+              <div class="tool-chip"><span class="tool-badge">ĐỊA ĐIỂM</span> TP. Hồ Chí Minh, Việt Nam</div>
+              <div class="tool-chip"><span class="tool-badge">EMAIL</span> tkhanhhuyen0484@gmail.com</div>
+              <div class="tool-chip"><span class="tool-badge">TRỌNG TÂM</span> Mobile App UI · Website Responsive · Frontend Code Live</div>
+            </div>
+          </div>
 
-        <div class="contact-tags">
-          <span class="contact-tag">Thiết kế Mobile App</span>
-          <span class="contact-tag">Thiết kế Website</span>
-          <span class="contact-tag">Landing Page</span>
-          <span class="contact-tag">Code Frontend Live</span>
-          <span class="contact-tag">Interactive Prototype</span>
+          <div class="contact-card">
+            <span class="kicker-text">KÊNH TRỰC TIẾP</span>
+            <h2 class="section-headline" style="font-size: 24px; margin-bottom: 8px;">LIÊN HỆ NHANH CHÓNG</h2>
+            <p class="contact-card-desc" style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 24px;">Hãy chọn kênh liên lạc thuận tiện nhất với bạn. Mình sẽ phản hồi nhanh nhất có thể.</p>
+            
+            <div class="contact-links">
+              <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <span class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </span>
+                <span>Facebook · Khánh Huyền</span>
+              </a>
+              
+              <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <span class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+                </span>
+                <span>Zalo · 0368 965 381</span>
+              </a>
+
+              <a href="mailto:tkhanhhuyen0484@gmail.com" class="contact-link-item">
+                <span class="contact-link-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span>Email · tkhanhhuyen0484@gmail.com</span>
+              </a>
+
+              <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="contact-link-item" style="border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.06);">
+                <span class="contact-link-icon" style="background: rgba(56, 189, 248, 0.15);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                </span>
+                <span style="color: var(--cyan-accent); font-weight: 700;">Tải CV Khánh Huyền (PDF)</span>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="contact-card">
-        <h2>Kênh liên hệ trực tiếp</h2>
-        <p class="contact-card-desc">Hãy chọn kênh liên lạc thuận tiện nhất với bạn. Mình sẽ phản hồi nhanh nhất có thể.</p>
-        <div class="contact-links">
-          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="contact-link-item">
-            <span class="contact-link-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </span>
-            <span>Facebook (Khánh Huyền)</span>
-          </a>
-          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="contact-link-item">
-            <span class="contact-link-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
-            </span>
-            <span>Zalo (0368 965 381)</span>
-          </a>
-          <a href="mailto:tkhanhhuyen0484@gmail.com" class="contact-link-item">
-            <span class="contact-link-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </span>
-            <span>Email (tkhanhhuyen0484@gmail.com)</span>
-          </a>
-          <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="contact-link-item">
-            <span class="contact-link-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            </span>
-            <span>Tải CV Khánh Huyền (PDF)</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer reveal" id="contact">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

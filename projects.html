@@ -3,304 +3,319 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dự án | Khánh Huyền – UI/UX Designer &amp; Frontend Developer</title>
+  <title>Dự án · Khánh Huyền | Frontend Developer &amp; UI/UX Designer</title>
   <meta name="description" content="Xem các dự án chọn lọc của Khánh Huyền về thiết kế UI/UX mobile app, website và code frontend responsive.">
-  <meta name="author" content="Khánh Huyền">
-
+  
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://khanhhuyen.dev/projects.html">
-  <meta property="og:title" content="Dự án | Khánh Huyền – UI/UX Designer &amp; Frontend Developer">
+  <meta property="og:url" content="https://khanhhuyen-portfolio.vercel.app/projects.html">
+  <meta property="og:title" content="Dự án · Khánh Huyền | Frontend Developer &amp; UI/UX Designer">
   <meta property="og:description" content="Khám phá các dự án UI/UX Mobile App và Website Frontend đã hoàn thiện của Khánh Huyền.">
-  <meta property="og:image" content="img/about-portrait.png">
+  <meta property="og:image" content="https://khanhhuyen-portfolio.vercel.app/assets/images/thewann/thewann-device-mockup.png">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dự án | Khánh Huyền – UI/UX Designer &amp; Frontend Developer">
-  <meta name="twitter:description" content="Khám phá các dự án UI/UX Mobile App và Website Frontend đã hoàn thiện của Khánh Huyền.">
-  <meta name="twitter:image" content="img/about-portrait.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Dự án · Khánh Huyền | Frontend Developer &amp; UI/UX Designer">
+  <meta property="twitter:description" content="Khám phá các dự án UI/UX Mobile App và Website Frontend đã hoàn thiện của Khánh Huyền.">
+  <meta property="twitter:image" content="https://khanhhuyen-portfolio.vercel.app/assets/images/thewann/thewann-device-mockup.png">
 
-  <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+  <div class="gradient"></div>
 
-<div class="gradient"></div>
-
-<div class="container">
+    <!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
-      <a href="index.html" class="nav-link">Trang chủ</a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
-      <a href="about.html" class="nav-link">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="about.html" class="nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="nav-link ">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only">Liên hệ</a>
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
 
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
 
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
-      <a href="index.html" class="mobile-nav-link">Trang chủ</a>
+      <a href="index.html" class="mobile-nav-link ">Trang chủ</a>
       <a href="projects.html" class="mobile-nav-link active">Dự án</a>
-      <a href="about.html" class="mobile-nav-link">Giới thiệu</a>
-      <a href="contact.html" class="mobile-nav-link">Liên hệ</a>
+      <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
+      <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--cyan-accent); font-weight: 700;">Tải CV (PDF) ↓</a>
     </nav>
   </div>
-</div>
 
 <main>
-  <section class="projects-hero">
-    <div class="container">
-      <div class="projects-hero-copy reveal">
-        <div class="availability-badge fade-in-slow">
-          <span class="availability-dot"></span>
-          <span class="availability-text">Dự án chọn lọc</span>
-        </div>
-
-        <h1 class="hero-title fade-in-slow">
-          <span>Dự án</span>
-          <span class="subtitle">Thiết kế mobile app, website và code frontend responsive</span>
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+      <div class="container">
+        <span class="kicker-text">PORTFOLIO &amp; CASE STUDIES</span>
+        <h1 class="editorial-hero-title" style="font-size: 58px; line-height: 1.05; margin-bottom: 20px;">
+          <span>DỰ ÁN CHỌN LỌC</span>
+          <span>UI/UX &amp; FRONTEND</span>
         </h1>
-
-        <p class="hero-description reveal">
-          Bộ sưu tập các dự án đã hoàn thiện, thể hiện rõ nét tư duy sản phẩm, khả năng thiết kế UI/UX và năng lực code frontend triển khai thực tế.
+        <p class="editorial-hero-desc" style="max-width: 640px; margin: 0 auto 36px; text-align: center;">
+          Bộ sưu tập các dự án hoàn chỉnh từ ứng dụng di động đến website responsive — thể hiện rõ nét tư duy thẩm mỹ hiện đại, trải nghiệm trực quan và năng lực code frontend thực tế.
         </p>
 
-        <div class="project-scope reveal">
-          <div class="project-scope-item">
-            <strong>08</strong>
-            <span>Dự án hoàn chỉnh</span>
+        <!-- Stats 3-Col Banner -->
+        <div class="stats-banner-box" style="grid-template-columns: repeat(3, 1fr); max-width: 840px; margin: 0 auto 40px;">
+          <div class="stat-item">
+            <strong class="stat-number">09+</strong>
+            <span class="stat-label">Dự án hoàn chỉnh</span>
           </div>
-          <div class="project-scope-item">
-            <strong>02</strong>
-            <span>Nhóm dự án chính</span>
+          <div class="stat-item">
+            <strong class="stat-number">02</strong>
+            <span class="stat-label">Nền tảng (Web &amp; App)</span>
           </div>
-          <div class="project-scope-item">
-            <strong>UI/UX + Code</strong>
-            <span>Thiết kế &amp; Frontend</span>
+          <div class="stat-item">
+            <strong class="stat-number">100%</strong>
+            <span class="stat-label">Design-to-Code</span>
           </div>
         </div>
 
-        <div class="hero-cta reveal">
-          <a href="contact.html" class="btn-primary">Trao đổi với mình</a>
-          <a href="#all-projects" class="btn-secondary">Khám phá dự án</a>
+        <!-- Filter Chips -->
+        <div class="project-filters" role="tablist" aria-label="Danh mục dự án">
+          <button class="filter-chip is-active" type="button" data-filter="all">Tất cả dự án (09)</button>
+          <button class="filter-chip" type="button" data-filter="website">Website &amp; Web Platform (03)</button>
+          <button class="filter-chip" type="button" data-filter="mobile">Mobile App UI/UX (06)</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="portfolio-snapshot reveal">
+    <!-- Projects Grid Section -->
+    <section class="featured-work-section" style="padding-top: 0;">
+      <div class="container">
+                <div class="projects-grid" id="projects-grid">
+          
+                    <!-- Project: BambuUP -->
+          <a href="bambuup.html" class="featured-card project-card" data-category="website">
+            <div class="featured-card-media">
+              <img src="assets/images/bambuup/bambuup-mockup.jpg" alt="BambuUP Open Innovation Platform" loading="lazy" style="object-fit: cover; object-position: center;">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--cyan-accent);">Web Platform · Open Innovation</span>
+                <h3 class="featured-card-title">BambuUP</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 1: The Wann -->
+          <a href="the-wann.html" class="featured-card project-card" data-category="website">
+            <div class="featured-card-media">
+              <img src="assets/images/thewann/thewann-device-mockup.png" alt="Website The Wann Dining & Lounge" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--cyan-accent);">Website Frontend · Branding</span>
+                <h3 class="featured-card-title">The Wann</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 2: Sen Restaurant -->
+          <a href="sen-restaurant.html" class="featured-card project-card" data-category="website">
+            <div class="featured-card-media">
+              <img src="assets/images/sen/sen-home-real.png" alt="Website Nhà hàng Sen" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--cyan-accent);">Website Design · Frontend</span>
+                <h3 class="featured-card-title">Nhà hàng Sen</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 3: KidGuard -->
+          <a href="kidguard.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard Parental Control Mobile App" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · Parental Control</span>
+                <h3 class="featured-card-title">KidGuard App</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 4: AI Voice Lock -->
+          <a href="ai-voice-lock.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="assets/images/aivoicelock/ai-voice-lock-mockup.png" alt="AI Voice Lock Smart Note" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · AI &amp; Security</span>
+                <h3 class="featured-card-title">AI Voice Lock</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 5: Ultra Camera -->
+          <a href="ultra-camera.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="assets/images/ultracamera/ultra-mockup.png" alt="Ultra Camera Mobile App UI" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · Photo &amp; Video</span>
+                <h3 class="featured-card-title">Ultra Camera</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6: Care Trees -->
+          <a href="caretrees.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="img/care app.png" alt="Care Trees App UI Design" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · Lifestyle</span>
+                <h3 class="featured-card-title">Care Trees App</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 7: ELOGI -->
+          <a href="elogi.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI E-commerce App UI" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · E-Commerce</span>
+                <h3 class="featured-card-title">ELOGI</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 8: Prank Sound -->
+          <a href="pranksound.html" class="featured-card project-card" data-category="mobile">
+            <div class="featured-card-media">
+              <img src="assets/images/pranksound/pranksound-hero.png" alt="Prank Sound Entertainment App UI" loading="lazy">
+            </div>
+            <div class="featured-card-footer">
+              <div class="featured-card-info">
+                <span class="featured-card-cat" style="color: var(--purple-accent);">Mobile App · Entertainment</span>
+                <h3 class="featured-card-title">Prank Sound</h3>
+              </div>
+              <div class="card-arrow-circle">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Footer Banner -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-box">
+          
+          <div class="metallic-badge-card">
+            <h3 class="metallic-title">
+              LET'S CREATE<br>
+              SOMETHING<br>
+              EXTRAORDINARY
+            </h3>
+          </div>
+
+          <div class="cta-banner-center">
+            <p class="cta-banner-pitch">
+              Bạn đang ấp ủ một sản phẩm số mới? Mình sẵn sàng cùng bạn thiết kế giao diện trực quan và lập trình frontend chuẩn mực.
+            </p>
+            <a href="contact.html" class="btn-cta-work">
+              Liên hệ trao đổi ngay
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+
+          <div class="cta-contact-channels">
+            <a href="mailto:tkhanhhuyen0484@gmail.com" class="channel-link">
+              tkhanhhuyen0484@gmail.com
+            </a>
+            <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="channel-link">
+              0368 965 381 (Zalo)
+            </a>
+            <div class="channel-link">
+              TP. Hồ Chí Minh, Việt Nam
+            </div>
+            <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="channel-link" style="color: var(--cyan-accent); font-weight: 700;">
+              Tải CV Khánh Huyền (PDF)
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="snapshot-grid">
-        <article>
-          <span>Vai trò</span>
-          <strong>UI/UX &amp; Frontend</strong>
-          <p>User flow, wireframe, UI high-fidelity, prototype và code frontend responsive.</p>
-        </article>
-        <article>
-          <span>Nền tảng</span>
-          <strong>Kỹ thuật phần mềm</strong>
-          <p>Đại học Công nghiệp TP.HCM · Hiểu sâu kiến trúc code và khả năng triển khai thực tế.</p>
-        </article>
-        <article>
-          <span>Thế mạnh</span>
-          <strong>Mobile App &amp; Web Live</strong>
-          <p>Tập trung vào luồng app, website responsive, landing page và các chi tiết giao diện chỉn chu.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="projects-section" id="all-projects">
-    <div class="container">
-      <div class="projects-heading reveal">
-        <div>
-          <h2 class="section-title">Dự án hoàn chỉnh</h2>
-          <p>Bộ sưu tập các dự án mobile app và website frontend đã hoàn thiện, có hình ảnh và trang case study đầy đủ.</p>
-        </div>
-      </div>
-
-      <div class="project-filters reveal" role="tablist" aria-label="Danh mục dự án">
-        <button class="filter-chip is-active" type="button" data-filter="all">Tất cả dự án</button>
-        <button class="filter-chip" type="button" data-filter="mobile">Mobile App</button>
-        <button class="filter-chip" type="button" data-filter="website">Website</button>
-      </div>
-
-      <div class="projects-grid projects-grid-compact projects-grid-minimal" id="projects-grid">
-        <article class="project-card" data-category="website">
-          <a href="the-wann.html">
-            <div class="project-overlay">
-              <img src="assets/images/thewann/thewann-device-mockup.png" alt="Mockup thiết bị website The Wann" class="project-image">
-            </div>
-            <div class="project-content">
-              <span class="project-category website">Website Frontend</span>
-              <h3 class="project-title">The Wann</h3>
-              <p class="project-description">Website nhà hàng và nightlife với luồng xem menu, kể chuyện sự kiện và đặt bàn rõ ràng.</p>
-              <div class="project-proof">
-                <span>Vai trò: Thiết kế · Code · Deploy</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="website">
-          <a href="sen-restaurant.html">
-            <div class="project-overlay">
-              <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen" class="project-image" loading="lazy">
-            </div>
-            <div class="project-content">
-              <span class="project-category website">Website Frontend</span>
-              <h3 class="project-title">Nhà hàng Sen</h3>
-              <p class="project-description">Website nhà hàng responsive với định hướng hình ảnh tinh tế, nội dung menu rõ và luồng đặt bàn dễ hiểu.</p>
-              <div class="project-proof">
-                <span>Vai trò: Thiết kế · Code · Deploy</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="kidguard.html">
-            <div class="project-overlay">
-              <img src="assets/images/kidguard/kidguard-mockup.png" alt="KidGuard parental control mockup mobile app" class="project-image">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">KidGuard App</h3>
-              <p class="project-description">App kiểm soát trẻ em với quản lý thời gian màn hình, app an toàn, thiết lập hồ sơ và trạng thái khóa.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="ai-voice-lock.html">
-            <div class="project-overlay">
-              <img src="assets/images/aivoicelock/ai-voice-lock-mockup.png" alt="AI Voice Lock Smart Note mockup mobile app" class="project-image">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">AI Voice Lock: Smart Note</h3>
-              <p class="project-description">App ghi chú bảo mật bằng giọng nói với tóm tắt thông minh, chế độ khóa và ghi chú riêng tư.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="ultra-camera.html">
-            <div class="project-overlay">
-              <img src="assets/images/ultracamera/ultra-mockup.png" alt="Ultra Camera mockup mobile app" class="project-image">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">Ultra Camera</h3>
-              <p class="project-description">App camera chuyên nghiệp với luồng chụp ảnh, thư viện và chỉnh sửa ảnh.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="caretrees.html">
-            <div class="project-overlay">
-              <img src="img/care app.png" alt="Care Trees Thiết kế UI Mobile App" class="project-image" loading="lazy">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">Care Trees App</h3>
-              <p class="project-description">Trải nghiệm chăm sóc cây nhẹ nhàng với nhắc nhở và luồng chăm sóc hằng ngày đơn giản.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="elogi.html">
-            <div class="project-overlay">
-              <img src="assets/images/elogi/elogi-hero.png" alt="ELOGI Mobile E-commerce App UI Design" class="project-image" loading="lazy">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">ELOGI</h3>
-              <p class="project-description">App thương mại điện tử mobile với tìm kiếm sản phẩm, chat, theo dõi đơn hàng và luồng mua sắm gọn gàng.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card" data-category="mobile">
-          <a href="pranksound.html">
-            <div class="project-overlay">
-              <img src="assets/images/pranksound/pranksound-hero.png" alt="Prank Sound thiết kế UI app giải trí mobile" class="project-image" loading="lazy">
-            </div>
-            <div class="project-content">
-              <span class="project-category mobile">Mobile App</span>
-              <h3 class="project-title">Prank Sound</h3>
-              <p class="project-description">App giải trí vui nhộn với hiệu ứng âm thanh prank, hình ảnh nổi bật và tương tác nhanh.</p>
-              <div class="project-proof">
-                <span>Vai trò: UI/UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer reveal">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">Thiết kế trải nghiệm số cho sản phẩm, thương hiệu và đội ngũ sáng tạo.</p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p class="copyright">© 2026 Khánh Huyền. Tất cả quyền được bảo lưu.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

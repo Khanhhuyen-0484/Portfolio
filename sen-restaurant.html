@@ -22,36 +22,40 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
-<div class="container">
-  <!-- Header -->
+<!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
+    <nav class="nav">
       <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
       <a href="about.html" class="nav-link ">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="contact.html" class="nav-link ">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
-  <!-- Mobile Navigation Overlay -->
+
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
@@ -59,9 +63,9 @@
       <a href="projects.html" class="mobile-nav-link active">Dự án</a>
       <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--cyan-accent); font-weight: 700;">Tải CV (PDF) ↓</a>
     </nav>
   </div>
-</div>
 
 <main>
   <section class="sen-hero">
@@ -115,18 +119,70 @@
     </div>
   </section>
 
-  <section class="case-section sen-screens-section">
-    <div class="container reveal">
-      <div class="case-section-header"><p class="case-kicker">Hình ảnh website</p><h2 class="case-heading">Một vài màn hình từ website Nhà hàng Sen.</h2></div>
-      <div class="sen-screen-gallery">
-        <figure class="sen-screen-card sen-screen-wide">
-          <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen" loading="lazy">
-          <figcaption><span>Trang chủ</span><strong>Hero section, nhận diện thương hiệu và CTA tư vấn</strong></figcaption>
-        </figure>
-        <figure class="sen-screen-card">
-          <img src="assets/images/sen/sen-space-real.png" alt="Ảnh chụp phần không gian website Nhà hàng Sen" loading="lazy">
-          <figcaption><span>Không gian</span><strong>Gallery không gian, tư vấn mâm tiệc và sự kiện</strong></figcaption>
-        </figure>
+    <!-- Real Live Website Screens Showcase -->
+  <section class="case-section sen-screens-section" id="screens">
+    <div class="container">
+      <div class="case-section-header">
+        <p class="case-kicker">HÌNH ẢNH WEBSITE</p>
+        <h2 class="case-heading">Giao diện thực tế từ website Nhà hàng Sen</h2>
+        <p class="case-subtitle" style="margin-bottom: 0;">Thiết kế đậm nét văn hóa ẩm thực truyền thống Việt Nam, bố cục thoáng đãng và dẫn dắt thực khách đặt bàn dễ dàng.</p>
+      </div>
+
+      <div class="browser-showcase-grid-2" style="margin-top: 32px;">
+        
+        <!-- Screen 1: Home -->
+        <div class="browser-showcase-card">
+          <div class="browser-window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>https://nhahangsen.vercel.app/</span>
+            </div>
+            <div class="browser-badge-live">VERCEL LIVE</div>
+          </div>
+          <div class="browser-window-body" title="Nhấp để phóng to xem trọn vẹn">
+            <img src="assets/images/sen/sen-home-real.png" alt="Ảnh chụp trang chủ website Nhà hàng Sen" loading="lazy" class="zoomable-img">
+          </div>
+          <div class="browser-card-caption">
+            <div class="caption-title-row">
+              <span class="caption-tag">Trang chủ &amp; Hero Banner</span>
+              <span class="caption-hint">Phóng to ↗</span>
+            </div>
+            <h3 class="caption-heading">Hero section nhận diện thương hiệu &amp; CTA tư vấn</h3>
+            <p class="caption-text">Hình ảnh đại diện món ăn truyền thống, câu chuyện thương hiệu và các nút chuyển đổi tư vấn mâm tiệc nổi bật.</p>
+          </div>
+        </div>
+
+        <!-- Screen 2: Space -->
+        <div class="browser-showcase-card">
+          <div class="browser-window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>https://nhahangsen.vercel.app/khong-gian</span>
+            </div>
+          </div>
+          <div class="browser-window-body" title="Nhấp để phóng to xem trọn vẹn">
+            <img src="assets/images/sen/sen-space-real.png" alt="Ảnh chụp phần không gian website Nhà hàng Sen" loading="lazy" class="zoomable-img">
+          </div>
+          <div class="browser-card-caption">
+            <div class="caption-title-row">
+              <span class="caption-tag">Không gian nhà hàng</span>
+              <span class="caption-hint">Phóng to ↗</span>
+            </div>
+            <h3 class="caption-heading">Thư viện không gian tiệc &amp; Liên hệ đặt bàn</h3>
+            <p class="caption-text">Trình bày các phòng tiệc ấm cúng, khu vực sân vườn và thông tin hướng dẫn đường đi tiện lợi.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -173,36 +229,21 @@
   </section>
 </main>
 
-<footer class="footer reveal" id="contact">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 <script src="js/main.js"></script>
 </body>

@@ -16,36 +16,40 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Passions+Conflict&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="gradient"></div>
 
-<div class="container">
-  <!-- Header -->
+<!-- Header -->
   <header class="header">
     <div class="logo">
-      <a href="index.html"><span class="logo-text">KH.</span></a>
+      <a href="index.html">
+        <span class="logo-monogram">KH</span>
+      </a>
     </div>
 
-    <nav class="nav" id="main-nav">
+    <nav class="nav">
       <a href="index.html" class="nav-link ">Trang chủ</a>
       <a href="projects.html" class="nav-link active">Dự án</a>
       <a href="about.html" class="nav-link ">Giới thiệu</a>
-      <a href="contact.html" class="nav-link mobile-only">Liên hệ</a>
+      <a href="contact.html" class="nav-link ">Liên hệ</a>
     </nav>
 
-    <a href="contact.html" class="btn-contact desktop-only ">Liên hệ</a>
-    
-    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+    <a href="contact.html" class="btn-talk desktop-only">
+      Liên hệ
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+    </a>
+
+    <button class="hamburger mobile-only" id="hamburger" aria-label="Toggle navigation menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </header>
-  
-  <!-- Mobile Navigation Overlay -->
+
+  <!-- Mobile Navigation Overlay & Drawer -->
   <div class="mobile-nav-overlay" id="mobile-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-drawer">
     <nav class="mobile-nav">
@@ -53,9 +57,9 @@
       <a href="projects.html" class="mobile-nav-link active">Dự án</a>
       <a href="about.html" class="mobile-nav-link ">Giới thiệu</a>
       <a href="contact.html" class="mobile-nav-link ">Liên hệ</a>
+      <a href="assets/docs/KhanhHuyen_CV.pdf" target="_blank" download="KhanhHuyen_CV.pdf" class="mobile-nav-link" style="color: var(--cyan-accent); font-weight: 700;">Tải CV (PDF) ↓</a>
     </nav>
   </div>
-</div>
 
 <main>
   <section class="ultra-hero">
@@ -150,42 +154,80 @@
     </div>
   </section>
 
+    <!-- Screens Showcase Section (Uncropped Mobile Device Frames) -->
   <section class="case-section ultra-soft-section" id="screens">
     <div class="container">
       <div class="case-section-header">
-        <p class="case-kicker">Showcase Màn hình</p>
-        <h2 class="case-heading">Các màn hình từ Onboarding, Camera chụp ảnh đến Gallery và Trình chỉnh sửa.</h2>
+        <p class="case-kicker">SHOWCASE MÀN HÌNH</p>
+        <h2 class="case-heading">Các màn hình từ Onboarding, Camera chụp ảnh đến Gallery và Trình chỉnh sửa</h2>
+        <p class="case-subtitle" style="margin-bottom: 0;">Giao diện điều khiển chuyên nghiệp, tối ưu chụp một tay với thanh công cụ thông số sắc nét.</p>
       </div>
 
       <div class="ultra-screens-grid">
+        
+        <!-- Screen 1 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-onboarding-01.png" alt="Onboarding 01" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-onboarding-01.png" alt="Onboarding 01" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Onboarding 01</span><strong>Chế độ chụp Pro</strong></div>
         </article>
+
+        <!-- Screen 2 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-onboarding-02.png" alt="Onboarding 02" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-onboarding-02.png" alt="Onboarding 02" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Onboarding 02</span><strong>Bộ lọc ảnh đa dạng</strong></div>
         </article>
+
+        <!-- Screen 3 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-onboarding-03.png" alt="Onboarding 03" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-onboarding-03.png" alt="Onboarding 03" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Onboarding 03</span><strong>Chỉnh sửa ảnh tức thì</strong></div>
         </article>
+
+        <!-- Screen 4 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-home.png" alt="Trang chủ Camera" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-home.png" alt="Trang chủ Camera" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Trang chủ</span><strong>Trung tâm phím tắt</strong></div>
         </article>
+
+        <!-- Screen 5 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-camera.png" alt="Giao diện chụp" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-camera.png" alt="Giao diện chụp" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Giao diện chụp</span><strong>Điều khiển thông số</strong></div>
         </article>
+
+        <!-- Screen 6 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-gallery.png" alt="Thư viện ảnh" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-gallery.png" alt="Thư viện ảnh" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Gallery</span><strong>Bộ sưu tập thông minh</strong></div>
         </article>
+
+        <!-- Screen 7 -->
         <article class="ultra-screen-card">
-          <img src="assets/images/ultracamera/ultra-photo-edit.png" alt="Trình chỉnh sửa ảnh" loading="lazy">
+          <div class="mobile-screen-header"><div class="mobile-screen-notch"></div></div>
+          <div class="mobile-screen-body" title="Nhấp để phóng to">
+            <img src="assets/images/ultracamera/ultra-photo-edit.png" alt="Trình chỉnh sửa ảnh" loading="lazy" class="zoomable-img">
+          </div>
           <div class="ultra-screen-info"><span>Biên tập ảnh</span><strong>Xóa phông &amp; Bộ lọc</strong></div>
         </article>
+
       </div>
     </div>
   </section>
@@ -205,36 +247,21 @@
   </section>
 </main>
 
-<footer class="footer reveal" id="contact">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Khánh Huyền</h2>
-        <p class="footer-tagline">
-          Tạo ra những trải nghiệm số chỉn chu cho mobile app, website và sản phẩm sáng tạo.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="projects.html">Dự án</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-          </ul>
+  <!-- Footer Bar -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-inner">
+        <div>&copy; 2026 Khánh Huyền. All Rights Reserved.</div>
+        <div class="footer-social-row">
+          <span>KẾT NỐI:</span>
+          <a href="https://www.facebook.com/khanhhuyen0844" target="_blank" rel="noopener noreferrer" class="social-pill">Facebook</a>
+          <a href="https://zalo.me/0368965381" target="_blank" rel="noopener noreferrer" class="social-pill">Zalo</a>
+          <a href="https://github.com/Khanhhuyen-0484" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+          <a href="contact.html" class="social-pill">Liên hệ</a>
         </div>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Khánh Huyền. Tất cả quyền được bảo lưu.
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 <script src="js/main.js"></script>
 </body>
