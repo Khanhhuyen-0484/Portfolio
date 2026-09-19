@@ -2797,3 +2797,87 @@ body.nav-open {
 .hero-portrait-card * {
   pointer-events: none;
 }
+
+
+/* ===================================================
+   BAMBUUP SHARP 3-COLUMN SHOWCASE SYSTEM (NO BLUR)
+   =================================================== */
+
+.bambuup-showcase-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.bambuup-showcase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-luxe);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.bambuup-showcase-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-light);
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.85), 0 0 35px rgba(56, 189, 248, 0.2);
+}
+
+.bambuup-window-body {
+  position: relative;
+  width: 100%;
+  max-height: 480px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #090b14;
+  border-bottom: 1px solid var(--border-subtle);
+  cursor: zoom-in;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.bambuup-window-body img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+  border-radius: 8px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.05) brightness(1.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bambuup-window-body::-webkit-scrollbar {
+  width: 5px;
+}
+.bambuup-window-body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+}
+.bambuup-window-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.bambuup-window-body::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan-accent);
+}
+
+@media (max-width: 991px) {
+  .bambuup-showcase-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bambuup-showcase-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
