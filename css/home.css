@@ -4,7 +4,6 @@
    No Glitchy Fonts · No Childish Icons · Pure Clean Minimal Luxury
    =================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
 
 :root {
   --bg-black: #08090c;
@@ -43,7 +42,7 @@
    Performance Optimizations
    ============================================ */
 
-main > section {
+main > section:not(:first-child) {
   content-visibility: auto;
   contain-intrinsic-size: 1px 760px;
 }

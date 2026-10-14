@@ -41,7 +41,7 @@
 (function () {
   const images = document.querySelectorAll('img');
   images.forEach((img) => {
-    const isHero = img.closest('.hero, .projects-hero, .case-hero, .elogi-hero, .prank-hero');
+    const isHero = img.closest('.editorial-hero, .hero, .projects-hero, .case-hero, .elogi-hero, .prank-hero');
     if (!isHero && !img.hasAttribute('loading')) {
       img.setAttribute('loading', 'lazy');
     }
