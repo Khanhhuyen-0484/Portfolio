@@ -39,6 +39,33 @@
   --shadow-glow: 0 0 35px rgba(255, 255, 255, 0.12);
 }
 
+/* ============================================
+   Performance Optimizations
+   ============================================ */
+
+main > section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 760px;
+}
+
+.project-card,
+.case-card,
+.elogi-step,
+.elogi-feature-card,
+.prank-step,
+.prank-feature-card,
+.prank-screen-card {
+  contain: layout paint;
+}
+
+.project-overlay img,
+.case-hero-media img,
+.elogi-hero-media img,
+.prank-hero-media img,
+.prank-screen-card img {
+  transform: translateZ(0);
+}
+
 /* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;

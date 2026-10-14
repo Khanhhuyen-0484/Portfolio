@@ -37,6 +37,20 @@
   }
 })();
 
+// Default image loading hints for static portfolio pages.
+(function () {
+  const images = document.querySelectorAll('img');
+  images.forEach((img) => {
+    const isHero = img.closest('.hero, .projects-hero, .case-hero, .elogi-hero, .prank-hero');
+    if (!isHero && !img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+    if (!img.hasAttribute('decoding')) {
+      img.setAttribute('decoding', 'async');
+    }
+  });
+})();
+
 // 2. Sticky Header Blur Shadow on Scroll
 (function() {
   const header = document.querySelector('.header');
